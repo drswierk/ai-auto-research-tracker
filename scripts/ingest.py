@@ -3,36 +3,55 @@
 Pull recent arXiv papers per research-lifecycle stage and append new candidates
 to data.json. Dedupes by link and (lowercased) title. Stdlib only — no pip installs.
 
-Run locally:   python scripts/ingest.py
-In CI:         called by .github/workflows/update-tracker.yml, which opens a PR
-               so a human approves every new entry before it goes live.
+Tuned to stay quiet: few results per stage, recent papers only, and a title-keyword
+filter to cut off-topic noise. Every new entry still goes through a PR for human review.
 """
 import json, re, sys, time, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data.json"
 API = "http://export.arxiv.org/api/query"
 ATOM = "{http://www.w3.org/2005/Atom}"
-MAX_PER_STAGE = 15  # how many recent hits to consider per stage
 
-# One search query per stage. Tune the terms to taste.
-QUERIES = {
-    "S1":  '("research idea generation" OR "hypothesis generation") AND "large language model"',
-    "S2":  '("literature review" OR "deep research agent" OR "survey generation") AND LLM',
-    "S3":  '("automated experiment" OR "research code" OR "reproducibility") AND (agent OR LLM)',
-    "S5":  '("scientific paper writing" OR "manuscript generation") AND LLM',
-    "S6":  '("automated peer review" OR "LLM reviewer") AND (benchmark OR evaluation)',
-    "S7":  '("rebuttal generation" OR "author response") AND LLM',
-    "S8":  '("paper to poster" OR "paper to slides" OR "research dissemination") AND LLM',
-    "E2E": '("AI scientist" OR "autonomous research" OR "research agent") AND "end-to-end"',
+MAX_PER_STAGE = 6     # how many recent hits to consider per stage (was 15)
+DAYS_BACK = 30        # only keep papers submitted within this many days
+CATS = "(cat:cs.CL OR cat:cs.AI OR cat:cs.LG OR cat:cs.DL OR cat:cs.IR OR cat:stat.ML)"
+
+# One search query per stage + keywords that MUST appear in the title.
+# A candidate is dropped if its title contains none of the stage keywords.
+STAGES = {
+    "S1":  ('(ti:"research idea generation" OR ti:"hypothesis generation" OR abs:"scientific hypothesis generation")',
+            ["idea generation", "hypothesis generation", "ideation"]),
+    "S2":  ('(ti:"literature review" OR ti:"deep research" OR ti:"survey generation")',
+            ["literature review", "deep research", "survey generation", "related work"]),
+    "S3":  ('(ti:"research code" OR ti:"experiment" OR ti:"reproducibility") AND abs:agent',
+            ["reproducibility", "research code", "experiment", "replication"]),
+    "S5":  ('(ti:"paper writing" OR ti:"manuscript generation" OR ti:"scientific writing")',
+            ["paper writing", "manuscript", "scientific writing"]),
+    "S6":  ('(ti:"peer review" OR ti:"automated review" OR ti:"LLM reviewer")',
+            ["peer review", "reviewer", "review generation"]),
+    "S7":  ('(ti:rebuttal OR ti:"author response")',
+            ["rebuttal", "author response"]),
+    "S8":  ('(ti:"paper to poster" OR ti:"paper to slides" OR ti:"research dissemination")',
+            ["poster", "slides", "dissemination"]),
+    "E2E": ('(ti:"AI scientist" OR ti:"autonomous research" OR ti:"research agent")',
+            ["ai scientist", "autonomous research", "research agent", "end-to-end"]),
 }
 
 def norm_title(t):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", "", t.lower())).strip()
 
-def fetch(stage, query):
+def recent_enough(published):
+    try:
+        dt = datetime.fromisoformat(published.replace("Z", "+00:00"))
+        return dt >= datetime.now(timezone.utc) - timedelta(days=DAYS_BACK)
+    except Exception:
+        return False
+
+def fetch(stage, query, keywords):
     params = urllib.parse.urlencode({
-        "search_query": f"all:{query}",
+        "search_query": f"({query}) AND {CATS}",
         "sortBy": "submittedDate", "sortOrder": "descending",
         "max_results": MAX_PER_STAGE,
     })
@@ -42,9 +61,14 @@ def fetch(stage, query):
     out = []
     for e in root.findall(f"{ATOM}entry"):
         title = (e.findtext(f"{ATOM}title") or "").strip()
+        published = (e.findtext(f"{ATOM}published") or "")
+        if not recent_enough(published):
+            continue
+        tl = title.lower()
+        if not any(k in tl for k in keywords):   # title-keyword filter (cuts noise)
+            continue
         link = (e.findtext(f"{ATOM}id") or "").strip()
         summary = re.sub(r"\s+", " ", (e.findtext(f"{ATOM}summary") or "").strip())
-        published = (e.findtext(f"{ATOM}published") or "")[:10]
         year = int(published[:4]) if published[:4].isdigit() else 0
         out.append({
             "method": title, "stage": stage, "category": "(unclassified)",
@@ -59,9 +83,9 @@ def main():
     seen_titles = {norm_title(d.get("method", "")) for d in data}
 
     added = 0
-    for stage, q in QUERIES.items():
+    for stage, (query, keywords) in STAGES.items():
         try:
-            for c in fetch(stage, q):
+            for c in fetch(stage, query, keywords):
                 if c["link"] in seen_links or norm_title(c["method"]) in seen_titles:
                     continue
                 data.append(c); seen_links.add(c["link"]); seen_titles.add(norm_title(c["method"]))
