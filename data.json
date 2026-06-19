@@ -1,0 +1,41 @@
+[
+  {"method":"Chain of Ideas","stage":"S1","category":"LLM Internal","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":true,"eval":"Comparable to human-quality ideas; ~$0.50/idea"},
+  {"method":"ResearchAgent","stage":"S1","category":"LLM Internal","venue":"NAACL","year":2025,"link":"https://aclanthology.org/2025.naacl-long.395/","github":true,"eval":"Human + model evaluation; academic-graph feedback"},
+  {"method":"SciMON","stage":"S1","category":"LLM Internal","venue":"ACL","year":2024,"link":"https://aclanthology.org/","github":true,"eval":"Mitigates shallow novelty; iterative refinement"},
+  {"method":"IRIS","stage":"S1","category":"LLM Internal","venue":"ACL","year":2025,"link":"https://aclanthology.org/","github":true,"eval":"MCTS reasoning; human-in-the-loop platform"},
+  {"method":"MOOSE-Chem","stage":"S1","category":"External Signal","venue":"ICLR","year":2025,"link":"https://arxiv.org/abs/2505.11604","github":false,"eval":"Rediscovers hypotheses from 51 high-impact papers"},
+  {"method":"Nova","stage":"S1","category":"External Signal","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"3.4x more novel ideas vs baseline"},
+  {"method":"VirSci","stage":"S1","category":"Multi-Agent","venue":"ACL","year":2025,"link":"https://aclanthology.org/","github":true,"eval":"Outperforms single-agent on novelty"},
+  {"method":"Deep Ideation","stage":"S1","category":"Multi-Agent","venue":"arXiv","year":2025,"link":"https://arxiv.org/pdf/2511.02238","github":true,"eval":"+10.67% quality; above conference acceptance levels"},
+  {"method":"Artificial Hivemind","stage":"S1","category":"Multi-Agent","venue":"NeurIPS","year":2025,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"26K queries; diversity collapse across models"},
+  {"method":"IdeaBench","stage":"S1","category":"Evaluation","venue":"KDD","year":2025,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"2,374 papers; 8 domains"},
+
+  {"method":"CiteME","stage":"S2","category":"Retrieval","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"Citation fidelity benchmark"},
+  {"method":"PaperQA2","stage":"S2","category":"Retrieval","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"Matches experts on 3 tasks; 70% contradiction validation"},
+  {"method":"PaSa","stage":"S2","category":"Retrieval","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2503.21248","github":true,"eval":"Agentic multi-step iterative retrieval"},
+  {"method":"AutoSurvey","stage":"S2","category":"Generation","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"First end-to-end LLM survey drafting system"},
+  {"method":"GPT Researcher","stage":"S2","category":"Generation","venue":"GitHub","year":2024,"link":"https://github.com/","github":true,"eval":"26K+ GitHub stars; report generation"},
+  {"method":"STORM","stage":"S2","category":"Generation","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"Multi-perspective question-asking for outlines"},
+  {"method":"SurveyX","stage":"S2","category":"Generation","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2506.10741","github":false,"eval":"+0.259 content quality; near expert level"},
+  {"method":"OpenScholar","stage":"S2","category":"Deep Research","venue":"Nature","year":2026,"link":"https://www.nature.com/articles/s42256-026-01188-x","github":false,"eval":"45M papers; +6.1% over GPT-4o"},
+  {"method":"Tongyi DeepResearch","stage":"S2","category":"Deep Research","venue":"GitHub","year":2025,"link":"https://github.com/","github":true,"eval":"30.5B params (3.3B activated); SOTA Deep Research"},
+  {"method":"AutoResearchBench","stage":"S2","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2604.25256v1","github":false,"eval":"Benchmark for complex literature discovery"},
+
+  {"method":"What Papers Don't Tell You","stage":"S3","category":"Reproduction","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.01801","github":false,"eval":"Recovering tacit knowledge for paper reproduction"},
+  {"method":"Automating Computational Reproducibility (Social Sci.)","stage":"S3","category":"Reproduction","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2602.08561v3","github":false,"eval":"Prompt vs agent; extends beyond ML/NLP"},
+
+  {"method":"Story2Proposal","stage":"S5","category":"Generation","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.27065","github":false,"eval":"Scaffold from idea to structured proposal"},
+
+  {"method":"From Passive Generation to Investigation","stage":"S6","category":"Review Agent","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2606.13349v1","github":false,"eval":"Proactive reviewer that investigates the paper"},
+  {"method":"PRAIB","stage":"S6","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.29815","github":false,"eval":"Behaviour benchmark; NeurIPS 22-25, ICLR 24-26"},
+  {"method":"Stop Automating Peer Review Without Rigorous Eval.","stage":"S6","category":"Position","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.03202v1","github":false,"eval":"Methodological critique of review automation"},
+  {"method":"Beyond Rating","stage":"S6","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2604.19502","github":false,"eval":"Evaluation of AI reviews beyond the rating"},
+  {"method":"Governing GenAI in Peer Review","stage":"S6","category":"Governance","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.20214","github":false,"eval":"Governance as a sociotechnical challenge"},
+
+  {"method":"RbtAct","stage":"S7","category":"Rebuttal","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.09723","github":false,"eval":"Rebuttal as supervision for review feedback"},
+  {"method":"Defend","stage":"S7","category":"Rebuttal","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2603.27360v1","github":false,"eval":"Automated rebuttals with minimal author guidance"},
+
+  {"method":"AI Scientist-v2","stage":"E2E","category":"Pipeline","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2504.08066","github":true,"eval":"Agentic tree search; workshop-level discovery"},
+  {"method":"AutoResearch AI","stage":"E2E","category":"Pipeline","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.23204","github":false,"eval":"End-to-end system; references AI Scientist-v2/Kosmos"},
+  {"method":"AI Research Agents Narrow Scientific Exploration","stage":"E2E","category":"Findings","venue":"arXiv","year":2026,"link":"https://arxiv.org/abs/2605.27905","github":false,"eval":"Empirical: agents narrow the exploration space"}
+]

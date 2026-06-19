@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Auto-Research Tracker</title>
+<link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --line:#e3e3e3; --accent:#2d6cdf; --chip:#eef3fc; }
+  *{box-sizing:border-box;}
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--fg);
+       margin:0 auto;max-width:1200px;padding:28px;background:#fafafa;}
+  h1{font-size:22px;margin:0 0 4px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 20px;}
+  .controls{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:16px;}
+  .ctrl{display:flex;flex-direction:column;gap:4px;}
+  .ctrl label{font-size:12px;color:var(--muted);font-weight:600;}
+  select{padding:7px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:#fff;min-width:160px;}
+  .stat{background:var(--chip);color:var(--accent);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:600;}
+  button.reset{padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;font-size:13px;}
+  button.reset:hover{background:#f0f0f0;}
+  .note{font-size:12px;color:var(--muted);margin-top:18px;line-height:1.5;}
+  a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
+  .stage-chip{display:inline-block;background:var(--chip);color:var(--accent);border-radius:6px;padding:2px 7px;font-size:12px;font-weight:600;}
+  #err{display:none;background:#fff4f4;border:1px solid #f3c9c9;color:#a33;border-radius:8px;padding:14px 16px;font-size:14px;line-height:1.5;}
+  code{background:#eee;padding:1px 5px;border-radius:4px;font-size:12px;}
+</style>
+</head>
+<body>
+  <h1>AI Auto-Research Tracker</h1>
+  <p class="sub">A living, filterable index of AI tools across the research lifecycle (S1–S8 + end-to-end systems). Data loads from <code>data.json</code>; only the table library (Grid.js) is fetched from a CDN.</p>
+
+  <div id="err">
+    Could not load <code>data.json</code>. If you opened this file by double-clicking, the browser blocks local file reads.
+    Serve the folder instead: open a terminal in this folder and run <code>python -m http.server</code>, then visit <code>http://localhost:8000</code>.
+    On GitHub Pages it works with no extra step.
+  </div>
+
+  <div class="controls" id="controls" style="display:none">
+    <div class="ctrl"><label for="fStage">Stage</label><select id="fStage"><option value="">— all —</option></select></div>
+    <div class="ctrl"><label for="fCat">Category</label><select id="fCat"><option value="">— all —</option></select></div>
+    <div class="ctrl"><label for="fYear">Year</label><select id="fYear"><option value="">— all —</option></select></div>
+    <div class="ctrl"><label for="fCode">Code</label>
+      <select id="fCode"><option value="">— all —</option><option value="yes">has GitHub repo</option><option value="no">no repo</option></select>
+    </div>
+    <button class="reset" id="reset">Clear filters</button>
+    <div class="stat" id="stat"></div>
+  </div>
+
+  <div id="table"></div>
+
+  <p class="note">
+    <strong>To add a paper:</strong> edit <code>data.json</code> and append an object with the fields
+    <code>method, stage, category, venue, year, link, github (true/false), eval</code>. Save and reload.<br>
+    Stages: S1 Idea Generation · S2 Literature Review · S3 Coding &amp; Experiments · S4 Tables &amp; Figures · S5 Paper Writing · S6 Peer Review · S7 Rebuttal &amp; Revision · S8 Dissemination · E2E End-to-End.
+  </p>
+
+<script>
+const STAGE_NAMES={S1:"S1 · Idea Generation",S2:"S2 · Literature Review",S3:"S3 · Coding & Experiments",
+  S4:"S4 · Tables & Figures",S5:"S5 · Paper Writing",S6:"S6 · Peer Review",
+  S7:"S7 · Rebuttal & Revision",S8:"S8 · Dissemination",E2E:"End-to-End Systems"};
+let DATA=[], grid;
+
+function uniq(k){return [...new Set(DATA.map(d=>d[k]))];}
+function fill(id,vals,labelFn){const s=document.getElementById(id);vals.forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=labelFn?labelFn(v):v;s.appendChild(o);});}
+function rows(data){return data.map(d=>[
+  gridjs.html(`<a href="${d.link}" target="_blank" rel="noopener">${d.method}</a>`),
+  gridjs.html(`<span class="stage-chip">${d.stage}</span>`),
+  d.category,d.venue,String(d.year),d.github?"✔":"—",d.eval
+]);}
+
+function applyFilters(){
+  const st=fStage.value,cat=fCat.value,yr=fYear.value,code=fCode.value;
+  const f=DATA.filter(d=>(!st||d.stage===st)&&(!cat||d.category===cat)&&(!yr||String(d.year)===yr)&&(!code||(code==="yes"?d.github:!d.github)));
+  grid.updateConfig({data:rows(f)}).forceRender();
+  stat.textContent=`${f.length} / ${DATA.length} papers`;
+}
+
+fetch("data.json").then(r=>r.json()).then(d=>{
+  DATA=d;
+  document.getElementById("controls").style.display="flex";
+  fill("fStage",Object.keys(STAGE_NAMES).filter(s=>uniq("stage").includes(s)),s=>STAGE_NAMES[s]||s);
+  fill("fCat",[...uniq("category")].sort());
+  fill("fYear",[...uniq("year")].sort((a,b)=>b-a));
+  grid=new gridjs.Grid({
+    columns:[{name:"Paper",width:"28%"},{name:"Stage",width:"75px"},{name:"Category",width:"135px"},
+             {name:"Venue",width:"85px"},{name:"Year",width:"65px"},{name:"Code",width:"60px"},{name:"Evaluation"}],
+    data:rows(DATA),search:true,sort:true,pagination:{limit:15}
+  }).render(document.getElementById("table"));
+  ["fStage","fCat","fYear","fCode"].forEach(id=>document.getElementById(id).addEventListener("change",applyFilters));
+  document.getElementById("reset").onclick=()=>{["fStage","fCat","fYear","fCode"].forEach(id=>document.getElementById(id).value="");applyFilters();};
+  stat.textContent=`${DATA.length} / ${DATA.length} papers`;
+}).catch(()=>{document.getElementById("err").style.display="block";});
+</script>
+</body>
+</html>
