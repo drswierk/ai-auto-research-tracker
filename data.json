@@ -1,41 +1,562 @@
 [
-  {"method":"Chain of Ideas","stage":"S1","category":"LLM Internal","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":true,"eval":"Comparable to human-quality ideas; ~$0.50/idea"},
-  {"method":"ResearchAgent","stage":"S1","category":"LLM Internal","venue":"NAACL","year":2025,"link":"https://aclanthology.org/2025.naacl-long.395/","github":true,"eval":"Human + model evaluation; academic-graph feedback"},
-  {"method":"SciMON","stage":"S1","category":"LLM Internal","venue":"ACL","year":2024,"link":"https://aclanthology.org/","github":true,"eval":"Mitigates shallow novelty; iterative refinement"},
-  {"method":"IRIS","stage":"S1","category":"LLM Internal","venue":"ACL","year":2025,"link":"https://aclanthology.org/","github":true,"eval":"MCTS reasoning; human-in-the-loop platform"},
-  {"method":"MOOSE-Chem","stage":"S1","category":"External Signal","venue":"ICLR","year":2025,"link":"https://arxiv.org/abs/2505.11604","github":false,"eval":"Rediscovers hypotheses from 51 high-impact papers"},
-  {"method":"Nova","stage":"S1","category":"External Signal","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"3.4x more novel ideas vs baseline"},
-  {"method":"VirSci","stage":"S1","category":"Multi-Agent","venue":"ACL","year":2025,"link":"https://aclanthology.org/","github":true,"eval":"Outperforms single-agent on novelty"},
-  {"method":"Deep Ideation","stage":"S1","category":"Multi-Agent","venue":"arXiv","year":2025,"link":"https://arxiv.org/pdf/2511.02238","github":true,"eval":"+10.67% quality; above conference acceptance levels"},
-  {"method":"Artificial Hivemind","stage":"S1","category":"Multi-Agent","venue":"NeurIPS","year":2025,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"26K queries; diversity collapse across models"},
-  {"method":"IdeaBench","stage":"S1","category":"Evaluation","venue":"KDD","year":2025,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"2,374 papers; 8 domains"},
-
-  {"method":"CiteME","stage":"S2","category":"Retrieval","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2410.02736","github":false,"eval":"Citation fidelity benchmark"},
-  {"method":"PaperQA2","stage":"S2","category":"Retrieval","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"Matches experts on 3 tasks; 70% contradiction validation"},
-  {"method":"PaSa","stage":"S2","category":"Retrieval","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2503.21248","github":true,"eval":"Agentic multi-step iterative retrieval"},
-  {"method":"AutoSurvey","stage":"S2","category":"Generation","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"First end-to-end LLM survey drafting system"},
-  {"method":"GPT Researcher","stage":"S2","category":"Generation","venue":"GitHub","year":2024,"link":"https://github.com/","github":true,"eval":"26K+ GitHub stars; report generation"},
-  {"method":"STORM","stage":"S2","category":"Generation","venue":"arXiv","year":2024,"link":"https://arxiv.org/abs/2406.10294","github":true,"eval":"Multi-perspective question-asking for outlines"},
-  {"method":"SurveyX","stage":"S2","category":"Generation","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2506.10741","github":false,"eval":"+0.259 content quality; near expert level"},
-  {"method":"OpenScholar","stage":"S2","category":"Deep Research","venue":"Nature","year":2026,"link":"https://www.nature.com/articles/s42256-026-01188-x","github":false,"eval":"45M papers; +6.1% over GPT-4o"},
-  {"method":"Tongyi DeepResearch","stage":"S2","category":"Deep Research","venue":"GitHub","year":2025,"link":"https://github.com/","github":true,"eval":"30.5B params (3.3B activated); SOTA Deep Research"},
-  {"method":"AutoResearchBench","stage":"S2","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2604.25256v1","github":false,"eval":"Benchmark for complex literature discovery"},
-
-  {"method":"What Papers Don't Tell You","stage":"S3","category":"Reproduction","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.01801","github":false,"eval":"Recovering tacit knowledge for paper reproduction"},
-  {"method":"Automating Computational Reproducibility (Social Sci.)","stage":"S3","category":"Reproduction","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2602.08561v3","github":false,"eval":"Prompt vs agent; extends beyond ML/NLP"},
-
-  {"method":"Story2Proposal","stage":"S5","category":"Generation","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.27065","github":false,"eval":"Scaffold from idea to structured proposal"},
-
-  {"method":"From Passive Generation to Investigation","stage":"S6","category":"Review Agent","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2606.13349v1","github":false,"eval":"Proactive reviewer that investigates the paper"},
-  {"method":"PRAIB","stage":"S6","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.29815","github":false,"eval":"Behaviour benchmark; NeurIPS 22-25, ICLR 24-26"},
-  {"method":"Stop Automating Peer Review Without Rigorous Eval.","stage":"S6","category":"Position","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.03202v1","github":false,"eval":"Methodological critique of review automation"},
-  {"method":"Beyond Rating","stage":"S6","category":"Evaluation","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2604.19502","github":false,"eval":"Evaluation of AI reviews beyond the rating"},
-  {"method":"Governing GenAI in Peer Review","stage":"S6","category":"Governance","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.20214","github":false,"eval":"Governance as a sociotechnical challenge"},
-
-  {"method":"RbtAct","stage":"S7","category":"Rebuttal","venue":"arXiv","year":2026,"link":"https://arxiv.org/pdf/2603.09723","github":false,"eval":"Rebuttal as supervision for review feedback"},
-  {"method":"Defend","stage":"S7","category":"Rebuttal","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2603.27360v1","github":false,"eval":"Automated rebuttals with minimal author guidance"},
-
-  {"method":"AI Scientist-v2","stage":"E2E","category":"Pipeline","venue":"arXiv","year":2025,"link":"https://arxiv.org/abs/2504.08066","github":true,"eval":"Agentic tree search; workshop-level discovery"},
-  {"method":"AutoResearch AI","stage":"E2E","category":"Pipeline","venue":"arXiv","year":2026,"link":"https://arxiv.org/html/2605.23204","github":false,"eval":"End-to-end system; references AI Scientist-v2/Kosmos"},
-  {"method":"AI Research Agents Narrow Scientific Exploration","stage":"E2E","category":"Findings","venue":"arXiv","year":2026,"link":"https://arxiv.org/abs/2605.27905","github":false,"eval":"Empirical: agents narrow the exploration space"}
+  {
+    "method": "Chain of Ideas",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2410.02736",
+    "github": true,
+    "eval": "Comparable to human-quality ideas; ~$0.50/idea"
+  },
+  {
+    "method": "ResearchAgent",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "NAACL",
+    "year": 2025,
+    "link": "https://aclanthology.org/2025.naacl-long.395/",
+    "github": true,
+    "eval": "Human + model evaluation; academic-graph feedback"
+  },
+  {
+    "method": "SciMON",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "ACL",
+    "year": 2024,
+    "link": "https://aclanthology.org/",
+    "github": true,
+    "eval": "Mitigates shallow novelty; iterative refinement"
+  },
+  {
+    "method": "IRIS",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://aclanthology.org/",
+    "github": true,
+    "eval": "MCTS reasoning; human-in-the-loop platform"
+  },
+  {
+    "method": "MOOSE-Chem",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "ICLR",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2505.11604",
+    "github": false,
+    "eval": "Rediscovers hypotheses from 51 high-impact papers"
+  },
+  {
+    "method": "Nova",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2410.02736",
+    "github": false,
+    "eval": "3.4x more novel ideas vs baseline"
+  },
+  {
+    "method": "VirSci",
+    "stage": "S1",
+    "category": "Multi-Agent",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://aclanthology.org/",
+    "github": true,
+    "eval": "Outperforms single-agent on novelty"
+  },
+  {
+    "method": "Deep Ideation",
+    "stage": "S1",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://arxiv.org/pdf/2511.02238",
+    "github": true,
+    "eval": "+10.67% quality; above conference acceptance levels"
+  },
+  {
+    "method": "Artificial Hivemind",
+    "stage": "S1",
+    "category": "Multi-Agent",
+    "venue": "NeurIPS",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2410.02736",
+    "github": false,
+    "eval": "26K queries; diversity collapse across models"
+  },
+  {
+    "method": "IdeaBench",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "KDD",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2410.02736",
+    "github": false,
+    "eval": "2,374 papers; 8 domains"
+  },
+  {
+    "method": "CiteME",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2410.02736",
+    "github": false,
+    "eval": "Citation fidelity benchmark"
+  },
+  {
+    "method": "PaperQA2",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2406.10294",
+    "github": true,
+    "eval": "Matches experts on 3 tasks; 70% contradiction validation"
+  },
+  {
+    "method": "PaSa",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2503.21248",
+    "github": true,
+    "eval": "Agentic multi-step iterative retrieval"
+  },
+  {
+    "method": "AutoSurvey",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2406.10294",
+    "github": true,
+    "eval": "First end-to-end LLM survey drafting system"
+  },
+  {
+    "method": "GPT Researcher",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "GitHub",
+    "year": 2024,
+    "link": "https://github.com/",
+    "github": true,
+    "eval": "26K+ GitHub stars; report generation"
+  },
+  {
+    "method": "STORM",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://arxiv.org/abs/2406.10294",
+    "github": true,
+    "eval": "Multi-perspective question-asking for outlines"
+  },
+  {
+    "method": "SurveyX",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2506.10741",
+    "github": false,
+    "eval": "+0.259 content quality; near expert level"
+  },
+  {
+    "method": "OpenScholar",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.nature.com/articles/s42256-026-01188-x",
+    "github": false,
+    "eval": "45M papers; +6.1% over GPT-4o"
+  },
+  {
+    "method": "Tongyi DeepResearch",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "GitHub",
+    "year": 2025,
+    "link": "https://github.com/",
+    "github": true,
+    "eval": "30.5B params (3.3B activated); SOTA Deep Research"
+  },
+  {
+    "method": "AutoResearchBench",
+    "stage": "S2",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2604.25256v1",
+    "github": false,
+    "eval": "Benchmark for complex literature discovery"
+  },
+  {
+    "method": "What Papers Don't Tell You",
+    "stage": "S3",
+    "category": "Reproduction",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/pdf/2603.01801",
+    "github": false,
+    "eval": "Recovering tacit knowledge for paper reproduction"
+  },
+  {
+    "method": "Automating Computational Reproducibility (Social Sci.)",
+    "stage": "S3",
+    "category": "Reproduction",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2602.08561v3",
+    "github": false,
+    "eval": "Prompt vs agent; extends beyond ML/NLP"
+  },
+  {
+    "method": "Story2Proposal",
+    "stage": "S5",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/pdf/2603.27065",
+    "github": false,
+    "eval": "Scaffold from idea to structured proposal"
+  },
+  {
+    "method": "From Passive Generation to Investigation",
+    "stage": "S6",
+    "category": "Review Agent",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2606.13349v1",
+    "github": false,
+    "eval": "Proactive reviewer that investigates the paper"
+  },
+  {
+    "method": "PRAIB",
+    "stage": "S6",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2605.29815",
+    "github": false,
+    "eval": "Behaviour benchmark; NeurIPS 22-25, ICLR 24-26"
+  },
+  {
+    "method": "Stop Automating Peer Review Without Rigorous Eval.",
+    "stage": "S6",
+    "category": "Position",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2605.03202v1",
+    "github": false,
+    "eval": "Methodological critique of review automation"
+  },
+  {
+    "method": "Beyond Rating",
+    "stage": "S6",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2604.19502",
+    "github": false,
+    "eval": "Evaluation of AI reviews beyond the rating"
+  },
+  {
+    "method": "Governing GenAI in Peer Review",
+    "stage": "S6",
+    "category": "Governance",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/pdf/2603.20214",
+    "github": false,
+    "eval": "Governance as a sociotechnical challenge"
+  },
+  {
+    "method": "RbtAct",
+    "stage": "S7",
+    "category": "Rebuttal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/pdf/2603.09723",
+    "github": false,
+    "eval": "Rebuttal as supervision for review feedback"
+  },
+  {
+    "method": "Defend",
+    "stage": "S7",
+    "category": "Rebuttal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2603.27360v1",
+    "github": false,
+    "eval": "Automated rebuttals with minimal author guidance"
+  },
+  {
+    "method": "AI Scientist-v2",
+    "stage": "E2E",
+    "category": "Pipeline",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://arxiv.org/abs/2504.08066",
+    "github": true,
+    "eval": "Agentic tree search; workshop-level discovery"
+  },
+  {
+    "method": "AutoResearch AI",
+    "stage": "E2E",
+    "category": "Pipeline",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/html/2605.23204",
+    "github": false,
+    "eval": "End-to-end system; references AI Scientist-v2/Kosmos"
+  },
+  {
+    "method": "AI Research Agents Narrow Scientific Exploration",
+    "stage": "E2E",
+    "category": "Findings",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://arxiv.org/abs/2605.27905",
+    "github": false,
+    "eval": "Empirical: agents narrow the exploration space"
+  },
+  {
+    "method": "DN-Hypo-Pipeline: An AI-Driven Workflow for Hypothesis Generation via Large Language Models and Scientific Explanations",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.08532v2",
+    "github": false,
+    "eval": "A scientific hypothesis is the first step in research and undergoes experimental validation, yet it also reflects a deep understanding of an…"
+  },
+  {
+    "method": "Conditional Hypothesis Generation for LLM-Based Text Analysis with Researcher-Specified Covariates",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.03029v1",
+    "github": false,
+    "eval": "A core goal of computational social science is to discover interpretable differences in how language varies across outcomes of interest, suc…"
+  },
+  {
+    "method": "HypoAgent: An Agentic Framework for Interactive Abductive Hypothesis Generation over Knowledge Graphs",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2605.31370v1",
+    "github": false,
+    "eval": "Abductive reasoning over knowledge graphs aims to generate logical hypotheses that explain observed entities or facts. Existing controllable…"
+  },
+  {
+    "method": "ProjectionBench: Evaluating Scientific Hypothesis Generation in LLMs Under Progressive Information Disclosure",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2605.30284v1",
+    "github": false,
+    "eval": "Scientific discovery is an inherently creative and uncertain process, requiring reasoning beyond the recall of known knowledge. While many b…"
+  },
+  {
+    "method": "The Compressive Knowledge Graph Hypothesis: Which Graph Facts Matter for Scientific Hypothesis Generation?",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2605.27176v2",
+    "github": false,
+    "eval": "Knowledge graphs (KGs) can provide structured scientific context to language models, but it remains unclear which graph facts actually shape…"
+  },
+  {
+    "method": "Hypothesis Generation and Inductive Inference in Children and Language Models",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2605.24528v2",
+    "github": false,
+    "eval": "Real world decision-making requires constructing mental models under uncertainty over evidence, over the underlying causal rules, and over t…"
+  },
+  {
+    "method": "ScaffoldAgent: Utility-Guided Dynamic Outline Optimization for Open-Ended Deep Research",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.20122v1",
+    "github": false,
+    "eval": "Open-ended deep research (OEDR) requires systems to acquire knowledge through multi-round retrieval and generate coherent long-form reports.…"
+  },
+  {
+    "method": "MetaResearcher: Scaling Deep Research via Self-Reflective Reinforcement Learning in Adversarial Virtual Environments",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.19893v1",
+    "github": false,
+    "eval": "Deep research agents have demonstrated remarkable capabilities in autonomous information gathering and synthesis, yet their training remains…"
+  },
+  {
+    "method": "DRFLOW: A Deep Research Benchmark for Personalized Workflow Prediction",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.18191v2",
+    "github": false,
+    "eval": "Deep research (DR) systems are increasingly used for complex information-seeking tasks, but existing works mainly focus on generating report…"
+  },
+  {
+    "method": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.17029v1",
+    "github": false,
+    "eval": "Deep research agents synthesize long-form reports by searching and reasoning over retrieved evidence. Reinforcement learning with rubric-bas…"
+  },
+  {
+    "method": "Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.15345v2",
+    "github": false,
+    "eval": "Deep research agents are increasingly evaluated on their ability to search for evidence, reason over retrieved sources, and produce grounded…"
+  },
+  {
+    "method": "Hybrid Open-Ended Tri-Evolution Makes Better Deep Researcher",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.13710v2",
+    "github": false,
+    "eval": "Deep research and agent evolution serve as de-facto tasks for AI agents in real-world applications toward artificial general intelligence. T…"
+  },
+  {
+    "method": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.18237v1",
+    "github": false,
+    "eval": "Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to e…"
+  },
+  {
+    "method": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.13608v2",
+    "github": false,
+    "eval": "Agent systems are advancing quickly across domains, but their evaluation remains fragmented. Most benchmarks rely on fixed, LLM-centric harn…"
+  },
+  {
+    "method": "Examining the Cognitive Gap Between Authors and Peer Reviewers on Academic Paper Novelty",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.13452v1",
+    "github": false,
+    "eval": "Novelty is a crucial metric for assessing the quality of academic papers. Scholars strive to highlight the novel aspects of their work, part…"
+  },
+  {
+    "method": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.13349v1",
+    "github": false,
+    "eval": "Large language models (LLMs) have shown promise in automating scientific peer review. However, existing approaches often struggle to generat…"
+  },
+  {
+    "method": "No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.13044v1",
+    "github": false,
+    "eval": "As AI-generated reviews move from experimental tools into peer-review infrastructure, most robustness concerns have focused on explicit atta…"
+  },
+  {
+    "method": "Does AI Reviewer See the Full Picture? Attacking and Defending Multimodal Peer Review",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.12716v1",
+    "github": false,
+    "eval": "The integration of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) into scientific peer-review workflows introduces novel and signi…"
+  },
+  {
+    "method": "Externalizing Research Synthesis and Validation in AI Scientists through a Research Harness",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.18874v1",
+    "github": false,
+    "eval": "AI systems can increasingly automate scientific workflows, but the reasoning that links prior evidence, generated ideas, experiments and fin…"
+  },
+  {
+    "method": "S1-DeepResearch: Beyond Search, Toward Real-World Long-Horizon Research Agents",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.15367v1",
+    "github": false,
+    "eval": "Deep research agents aim to solve complex knowledge-intensive tasks through long-horizon planning, evidence gathering, reasoning, and report…"
+  },
+  {
+    "method": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.11926v1",
+    "github": false,
+    "eval": "Scientific progress depends on a repeated loop of exploration, experimentation, and abstraction. Researchers test candidate directions, inte…"
+  },
+  {
+    "method": "Search Discipline for Long-Horizon Research Agents",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.11522v1",
+    "github": false,
+    "eval": "Autoresearch agents now propose, evaluate, and select scientific candidates against a metric, and that metric is usually an aggregate reduce…"
+  },
+  {
+    "method": "What Fits (Into Few Tokens) Doesn't Overfit: Compression and Generalization in ML Research Agents",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.11045v1",
+    "github": false,
+    "eval": "Reusing a held-out benchmark adaptively should, in principle, invite overfitting. Yet benchmark-driven machine learning (ML) has produced su…"
+  }
 ]
