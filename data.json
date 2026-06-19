@@ -5,9 +5,9 @@
     "category": "LLM Internal",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2410.02736",
-    "github": true,
-    "eval": "Comparable to human-quality ideas; ~$0.50/idea"
+    "link": "https://www.google.com/search?q=Chain%20of%20Ideas%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Comparable to human quality; $0.50/idea min cost"
   },
   {
     "method": "ResearchAgent",
@@ -15,9 +15,9 @@
     "category": "LLM Internal",
     "venue": "NAACL",
     "year": 2025,
-    "link": "https://aclanthology.org/2025.naacl-long.395/",
-    "github": true,
-    "eval": "Human + model evaluation; academic-graph feedback"
+    "link": "https://www.google.com/search?q=ResearchAgent%20NAACL%20auto-research",
+    "github": false,
+    "eval": "Human + model eval; academic graph feedback"
   },
   {
     "method": "SciMON",
@@ -25,9 +25,19 @@
     "category": "LLM Internal",
     "venue": "ACL",
     "year": 2024,
-    "link": "https://aclanthology.org/",
-    "github": true,
+    "link": "https://www.google.com/search?q=SciMON%20ACL%20auto-research",
+    "github": false,
     "eval": "Mitigates shallow novelty; iterative refinement"
+  },
+  {
+    "method": "Idea Gen Agent",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Idea%20Gen%20Agent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "100+ NLP researchers; LLM ideas higher novelty (p <0.05)"
   },
   {
     "method": "IRIS",
@@ -35,9 +45,19 @@
     "category": "LLM Internal",
     "venue": "ACL",
     "year": 2025,
-    "link": "https://aclanthology.org/",
-    "github": true,
-    "eval": "MCTS reasoning; human-in-the-loop platform"
+    "link": "https://www.google.com/search?q=IRIS%20ACL%20auto-research",
+    "github": false,
+    "eval": "MCTS adaptive reasoning; human-in-the-loop platform"
+  },
+  {
+    "method": "Spark",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "ICCC",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Spark%20ICCC%20auto-research",
+    "github": false,
+    "eval": "Judge model trained on 600K OpenReview reviews External Signal-Driven Generation"
   },
   {
     "method": "MOOSE-Chem",
@@ -45,7 +65,7 @@
     "category": "External Signal",
     "venue": "ICLR",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2505.11604",
+    "link": "https://www.google.com/search?q=MOOSE-Chem%20ICLR%20auto-research",
     "github": false,
     "eval": "Rediscovers hypotheses from 51 high-impact papers"
   },
@@ -55,19 +75,59 @@
     "category": "External Signal",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2410.02736",
+    "link": "https://www.google.com/search?q=Nova%20arXiv%20auto-research",
     "github": false,
-    "eval": "3.4x more novel ideas vs baseline"
+    "eval": "3.4×more novel ideas; 2.5×more top-rated"
   },
   {
-    "method": "VirSci",
+    "method": "SciAgents",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=SciAgents%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent reasoning over knowledge graphs"
+  },
+  {
+    "method": "SciPIP",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=SciPIP%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-domain; paper-anchored idea generation"
+  },
+  {
+    "method": "IdeaSynth",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "CHI",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=IdeaSynth%20CHI%20auto-research",
+    "github": false,
+    "eval": "20-user study; more alternatives explored vs baseline"
+  },
+  {
+    "method": "MOOSE-Chem2",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "NeurIPS",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=MOOSE-Chem2%20NeurIPS%20auto-research",
+    "github": false,
+    "eval": "Fine-grained, experimentally actionable hypotheses Multi-Agent Collaborative Generation"
+  },
+  {
+    "method": "Combi. Creativity",
     "stage": "S1",
     "category": "Multi-Agent",
-    "venue": "ACL",
-    "year": 2025,
-    "link": "https://aclanthology.org/",
-    "github": true,
-    "eval": "Outperforms single-agent on novelty"
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Combi.%20Creativity%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+7–10% similarity scores; cross-domain composition"
   },
   {
     "method": "Deep Ideation",
@@ -75,9 +135,29 @@
     "category": "Multi-Agent",
     "venue": "arXiv",
     "year": 2025,
-    "link": "https://arxiv.org/pdf/2511.02238",
-    "github": true,
-    "eval": "+10.67% quality; above conference acceptance levels"
+    "link": "https://www.google.com/search?q=Deep%20Ideation%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+10.67% quality; surpasses conference acceptance levels"
+  },
+  {
+    "method": "VirSci",
+    "stage": "S1",
+    "category": "Multi-Agent",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=VirSci%20ACL%20auto-research",
+    "github": false,
+    "eval": "Outperforms single-agent on novelty"
+  },
+  {
+    "method": "Multi-Agent Dial.",
+    "stage": "S1",
+    "category": "Multi-Agent",
+    "venue": "SIGDIAL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Multi-Agent%20Dial.%20SIGDIAL%20auto-research",
+    "github": false,
+    "eval": "Optimal at 3 critique-revision rounds"
   },
   {
     "method": "Artificial Hivemind",
@@ -85,9 +165,9 @@
     "category": "Multi-Agent",
     "venue": "NeurIPS",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2410.02736",
+    "link": "https://www.google.com/search?q=Artificial%20Hivemind%20NeurIPS%20auto-research",
     "github": false,
-    "eval": "26K queries; diversity collapse across models"
+    "eval": "26K queries; diversity collapse across models Novelty and Feasibility Assessment"
   },
   {
     "method": "IdeaBench",
@@ -95,9 +175,89 @@
     "category": "Evaluation",
     "venue": "KDD",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2410.02736",
+    "link": "https://www.google.com/search?q=IdeaBench%20KDD%20auto-research",
     "github": false,
-    "eval": "2,374 papers; 8 domains"
+    "eval": "2,374 papers; 8 domains; novelty>0.6, feasibility <0.5"
+  },
+  {
+    "method": "LiveIdeaBench",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=LiveIdeaBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "40+ models; 1,180 keywords; 22 scientific domains"
+  },
+  {
+    "method": "AI Idea Bench 2025",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AI%20Idea%20Bench%202025%20arXiv%20auto-research",
+    "github": false,
+    "eval": "3,495 papers; alignment + general reference eval"
+  },
+  {
+    "method": "HeurekaBench",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=HeurekaBench%20ICLR%20auto-research",
+    "github": false,
+    "eval": "+22% with critic module; open-ended science tasks"
+  },
+  {
+    "method": "ResearchBench",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "ACL",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ResearchBench%20ACL%20auto-research",
+    "github": false,
+    "eval": "12 disciplines; inspiration retrieval + ranking"
+  },
+  {
+    "method": "HindSight",
+    "stage": "S1",
+    "category": "Evaluation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=HindSight%20arXiv%20auto-research",
+    "github": false,
+    "eval": "LLM novelty negatively correlated with impact (ρ=−0.29)"
+  },
+  {
+    "method": "Rubric Rewards",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Rubric%20Rewards%20arXiv%20auto-research",
+    "github": false,
+    "eval": "70% expert preference; RL with rubric self-grading"
+  },
+  {
+    "method": "DeepInnovator",
+    "stage": "S1",
+    "category": "LLM Internal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=DeepInnovator%20arXiv%20auto-research",
+    "github": false,
+    "eval": "80–94% win rates vs frontier; 14B model"
+  },
+  {
+    "method": "FlowPIE",
+    "stage": "S1",
+    "category": "External Signal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=FlowPIE%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Higher novelty, feasibility, diversity vs baselines 42"
   },
   {
     "method": "CiteME",
@@ -105,9 +265,29 @@
     "category": "Retrieval",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2410.02736",
+    "link": "https://www.google.com/search?q=CiteME%20arXiv%20auto-research",
     "github": false,
     "eval": "Citation fidelity benchmark"
+  },
+  {
+    "method": "LitLLM",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=LitLLM%20arXiv%20auto-research",
+    "github": false,
+    "eval": "LLM + academic database integration"
+  },
+  {
+    "method": "LitSearch",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=LitSearch%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Retrieval precision benchmark"
   },
   {
     "method": "PaperQA2",
@@ -115,9 +295,19 @@
     "category": "Retrieval",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2406.10294",
-    "github": true,
-    "eval": "Matches experts on 3 tasks; 70% contradiction validation"
+    "link": "https://www.google.com/search?q=PaperQA2%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Matches/exceedsexperton3tasks; 70%contradiction validation"
+  },
+  {
+    "method": "OpenResearcher",
+    "stage": "S2",
+    "category": "Retrieval",
+    "venue": "EMNLP",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=OpenResearcher%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "RAG + graph traversal for literature exploration"
   },
   {
     "method": "PaSa",
@@ -125,9 +315,29 @@
     "category": "Retrieval",
     "venue": "arXiv",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2503.21248",
-    "github": true,
-    "eval": "Agentic multi-step iterative retrieval"
+    "link": "https://www.google.com/search?q=PaSa%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Agentic multi-step iterative retrieval Survey & Related Work Generation"
+  },
+  {
+    "method": "ChatPaper",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "GitHub",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=ChatPaper%20GitHub%20auto-research",
+    "github": false,
+    "eval": "19K+ GitHub stars; arXiv summarization tool"
+  },
+  {
+    "method": "PaperQA",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=PaperQA%20arXiv%20auto-research",
+    "github": false,
+    "eval": "8K+ GitHub stars; RAG for scientific Q&A"
   },
   {
     "method": "AutoSurvey",
@@ -135,8 +345,8 @@
     "category": "Generation",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2406.10294",
-    "github": true,
+    "link": "https://www.google.com/search?q=AutoSurvey%20arXiv%20auto-research",
+    "github": false,
     "eval": "First end-to-end LLM survey drafting system"
   },
   {
@@ -145,9 +355,19 @@
     "category": "Generation",
     "venue": "GitHub",
     "year": 2024,
-    "link": "https://github.com/",
-    "github": true,
-    "eval": "26K+ GitHub stars; report generation"
+    "link": "https://www.google.com/search?q=GPT%20Researcher%20GitHub%20auto-research",
+    "github": false,
+    "eval": "26K+ GitHub stars; comprehensive report generation"
+  },
+  {
+    "method": "LLMs for Lit. Review",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=LLMs%20for%20Lit.%20Review%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Hallucination analysis; models still generate errors"
   },
   {
     "method": "STORM",
@@ -155,9 +375,69 @@
     "category": "Generation",
     "venue": "arXiv",
     "year": 2024,
-    "link": "https://arxiv.org/abs/2406.10294",
-    "github": true,
+    "link": "https://www.google.com/search?q=STORM%20arXiv%20auto-research",
+    "github": false,
     "eval": "Multi-perspective question-asking for outlines"
+  },
+  {
+    "method": "Agentic AutoSurvey",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Agentic%20AutoSurvey%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent role decomposition"
+  },
+  {
+    "method": "Citegeist",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Citegeist%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Dynamic RAG pipeline on arXiv corpus"
+  },
+  {
+    "method": "IterSurvey",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=IterSurvey%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Iterative outline planning with stability checks"
+  },
+  {
+    "method": "LiRA",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=LiRA%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent retrieval + verification + narrative"
+  },
+  {
+    "method": "SurveyForge",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SurveyForge%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Outperforms AutoSurvey on outline quality"
+  },
+  {
+    "method": "SurveyG",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SurveyG%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Three-layer citation graph (Foundation/Dev/Frontier)"
   },
   {
     "method": "SurveyX",
@@ -165,9 +445,69 @@
     "category": "Generation",
     "venue": "arXiv",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2506.10741",
+    "link": "https://www.google.com/search?q=SurveyX%20arXiv%20auto-research",
     "github": false,
-    "eval": "+0.259 content quality; near expert level"
+    "eval": "+0.259 content quality improvement; near expert level"
+  },
+  {
+    "method": "InteractiveSurvey",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=InteractiveSurvey%20arXiv%20auto-research",
+    "github": false,
+    "eval": "User-customizable reference categorization + outlines"
+  },
+  {
+    "method": "CiteLLM",
+    "stage": "S2",
+    "category": "Generation",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=CiteLLM%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Hallucination-free via trusted repository routing Deep Research Agents"
+  },
+  {
+    "method": "ASReview",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "Nature MI",
+    "year": 2021,
+    "link": "https://www.google.com/search?q=ASReview%20Nature%20MI%20auto-research",
+    "github": false,
+    "eval": "Active learning; up to 95% effort reduction"
+  },
+  {
+    "method": "CHIME",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=CHIME%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Hierarchical organization of scientific studies"
+  },
+  {
+    "method": "DeepResearchAgent",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "GitHub",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=DeepResearchAgent%20GitHub%20auto-research",
+    "github": false,
+    "eval": "Hierarchical multi-agent; planner + sub-agents"
+  },
+  {
+    "method": "DeerFlow",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "GitHub",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=DeerFlow%20GitHub%20auto-research",
+    "github": false,
+    "eval": "Sub-agents with shared memory; sandboxed execution"
   },
   {
     "method": "OpenScholar",
@@ -175,9 +515,19 @@
     "category": "Deep Research",
     "venue": "Nature",
     "year": 2026,
-    "link": "https://www.nature.com/articles/s42256-026-01188-x",
+    "link": "https://www.google.com/search?q=OpenScholar%20Nature%20auto-research",
     "github": false,
-    "eval": "45M papers; +6.1% over GPT-4o"
+    "eval": "45M papers; +6.1% over GPT-4o, +5.5% over PaperQA2"
+  },
+  {
+    "method": "AutoAgent",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AutoAgent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Universal LLM compatibility; GAIA benchmark"
   },
   {
     "method": "Tongyi DeepResearch",
@@ -185,378 +535,1918 @@
     "category": "Deep Research",
     "venue": "GitHub",
     "year": 2025,
-    "link": "https://github.com/",
-    "github": true,
-    "eval": "30.5B params (3.3B activated); SOTA Deep Research"
+    "link": "https://www.google.com/search?q=Tongyi%20DeepResearch%20GitHub%20auto-research",
+    "github": false,
+    "eval": "30.5B params (3.3B activated); SOTA on Deep Research"
   },
   {
-    "method": "AutoResearchBench",
+    "method": "O-Researcher",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=O-Researcher%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent distillation + agentic RL"
+  },
+  {
+    "method": "OpenResearcher",
+    "stage": "S2",
+    "category": "Deep Research",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=OpenResearcher%20arXiv%20auto-research",
+    "github": false,
+    "eval": "54.8% BrowseComp-Plus; 97K+ trajectories Retrieval and Synthesis Quality Assessment"
+  },
+  {
+    "method": "DeepScholar-Bench",
     "stage": "S2",
     "category": "Evaluation",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2604.25256v1",
-    "github": false,
-    "eval": "Benchmark for complex literature discovery"
-  },
-  {
-    "method": "What Papers Don't Tell You",
-    "stage": "S3",
-    "category": "Reproduction",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/pdf/2603.01801",
-    "github": false,
-    "eval": "Recovering tacit knowledge for paper reproduction"
-  },
-  {
-    "method": "Automating Computational Reproducibility (Social Sci.)",
-    "stage": "S3",
-    "category": "Reproduction",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2602.08561v3",
-    "github": false,
-    "eval": "Prompt vs agent; extends beyond ML/NLP"
-  },
-  {
-    "method": "Story2Proposal",
-    "stage": "S5",
-    "category": "Generation",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/pdf/2603.27065",
-    "github": false,
-    "eval": "Scaffold from idea to structured proposal"
-  },
-  {
-    "method": "From Passive Generation to Investigation",
-    "stage": "S6",
-    "category": "Review Agent",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2606.13349v1",
-    "github": false,
-    "eval": "Proactive reviewer that investigates the paper"
-  },
-  {
-    "method": "PRAIB",
-    "stage": "S6",
-    "category": "Evaluation",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2605.29815",
-    "github": false,
-    "eval": "Behaviour benchmark; NeurIPS 22-25, ICLR 24-26"
-  },
-  {
-    "method": "Stop Automating Peer Review Without Rigorous Eval.",
-    "stage": "S6",
-    "category": "Position",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2605.03202v1",
-    "github": false,
-    "eval": "Methodological critique of review automation"
-  },
-  {
-    "method": "Beyond Rating",
-    "stage": "S6",
-    "category": "Evaluation",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2604.19502",
-    "github": false,
-    "eval": "Evaluation of AI reviews beyond the rating"
-  },
-  {
-    "method": "Governing GenAI in Peer Review",
-    "stage": "S6",
-    "category": "Governance",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/pdf/2603.20214",
-    "github": false,
-    "eval": "Governance as a sociotechnical challenge"
-  },
-  {
-    "method": "RbtAct",
-    "stage": "S7",
-    "category": "Rebuttal",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/pdf/2603.09723",
-    "github": false,
-    "eval": "Rebuttal as supervision for review feedback"
-  },
-  {
-    "method": "Defend",
-    "stage": "S7",
-    "category": "Rebuttal",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2603.27360v1",
-    "github": false,
-    "eval": "Automated rebuttals with minimal author guidance"
-  },
-  {
-    "method": "AI Scientist-v2",
-    "stage": "E2E",
-    "category": "Pipeline",
     "venue": "arXiv",
     "year": 2025,
-    "link": "https://arxiv.org/abs/2504.08066",
-    "github": true,
-    "eval": "Agentic tree search; workshop-level discovery"
-  },
-  {
-    "method": "AutoResearch AI",
-    "stage": "E2E",
-    "category": "Pipeline",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/html/2605.23204",
+    "link": "https://www.google.com/search?q=DeepScholar-Bench%20arXiv%20auto-research",
     "github": false,
-    "eval": "End-to-end system; references AI Scientist-v2/Kosmos"
+    "eval": "Coverage, coherence, factual accuracy benchmark"
   },
   {
-    "method": "AI Research Agents Narrow Scientific Exploration",
-    "stage": "E2E",
-    "category": "Findings",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "https://arxiv.org/abs/2605.27905",
-    "github": false,
-    "eval": "Empirical: agents narrow the exploration space"
-  },
-  {
-    "method": "DN-Hypo-Pipeline: An AI-Driven Workflow for Hypothesis Generation via Large Language Models and Scientific Explanations",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.08532v2",
-    "github": false,
-    "eval": "A scientific hypothesis is the first step in research and undergoes experimental validation, yet it also reflects a deep understanding of an…"
-  },
-  {
-    "method": "Conditional Hypothesis Generation for LLM-Based Text Analysis with Researcher-Specified Covariates",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.03029v1",
-    "github": false,
-    "eval": "A core goal of computational social science is to discover interpretable differences in how language varies across outcomes of interest, suc…"
-  },
-  {
-    "method": "HypoAgent: An Agentic Framework for Interactive Abductive Hypothesis Generation over Knowledge Graphs",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2605.31370v1",
-    "github": false,
-    "eval": "Abductive reasoning over knowledge graphs aims to generate logical hypotheses that explain observed entities or facts. Existing controllable…"
-  },
-  {
-    "method": "ProjectionBench: Evaluating Scientific Hypothesis Generation in LLMs Under Progressive Information Disclosure",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2605.30284v1",
-    "github": false,
-    "eval": "Scientific discovery is an inherently creative and uncertain process, requiring reasoning beyond the recall of known knowledge. While many b…"
-  },
-  {
-    "method": "The Compressive Knowledge Graph Hypothesis: Which Graph Facts Matter for Scientific Hypothesis Generation?",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2605.27176v2",
-    "github": false,
-    "eval": "Knowledge graphs (KGs) can provide structured scientific context to language models, but it remains unclear which graph facts actually shape…"
-  },
-  {
-    "method": "Hypothesis Generation and Inductive Inference in Children and Language Models",
-    "stage": "S1",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2605.24528v2",
-    "github": false,
-    "eval": "Real world decision-making requires constructing mental models under uncertainty over evidence, over the underlying causal rules, and over t…"
-  },
-  {
-    "method": "ScaffoldAgent: Utility-Guided Dynamic Outline Optimization for Open-Ended Deep Research",
+    "method": "ReportBench",
     "stage": "S2",
-    "category": "(unclassified)",
+    "category": "Evaluation",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.20122v1",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ReportBench%20arXiv%20auto-research",
     "github": false,
-    "eval": "Open-ended deep research (OEDR) requires systems to acquire knowledge through multi-round retrieval and generate coherent long-form reports.…"
+    "eval": "100-prompt benchmark from 678 filtered survey papers"
   },
   {
-    "method": "MetaResearcher: Scaling Deep Research via Self-Reflective Reinforcement Learning in Adversarial Virtual Environments",
+    "method": "IDRBench",
     "stage": "S2",
-    "category": "(unclassified)",
+    "category": "Evaluation",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.19893v1",
+    "link": "https://www.google.com/search?q=IDRBench%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research agents have demonstrated remarkable capabilities in autonomous information gathering and synthesis, yet their training remains…"
+    "eval": "100 tasks; interactive Deep Research evaluation"
   },
   {
-    "method": "DRFLOW: A Deep Research Benchmark for Personalized Workflow Prediction",
+    "method": "ScholarGym",
     "stage": "S2",
-    "category": "(unclassified)",
+    "category": "Evaluation",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.18191v2",
+    "link": "https://www.google.com/search?q=ScholarGym%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research (DR) systems are increasingly used for complex information-seeking tasks, but existing works mainly focus on generating report…"
+    "eval": "2,536 queries; query planning + tool invocation"
   },
   {
-    "method": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+    "method": "SciNetBench",
     "stage": "S2",
-    "category": "(unclassified)",
+    "category": "Evaluation",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.17029v1",
+    "link": "https://www.google.com/search?q=SciNetBench%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research agents synthesize long-form reports by searching and reasoning over retrieved evidence. Reinforcement learning with rubric-bas…"
+    "eval": "18M papers; relation-aware retrieval<20% 43"
   },
   {
-    "method": "Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
-    "stage": "S2",
+    "method": "SWE-bench",
+    "stage": "S3",
+    "category": "Code Gen.",
+    "venue": "ICLR",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=SWE-bench%20ICLR%20auto-research",
+    "github": false,
+    "eval": "2,294 real GitHub issues; Verified split (500 problems)"
+  },
+  {
+    "method": "SWE-agent",
+    "stage": "S3",
+    "category": "Code Gen.",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=SWE-agent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Agent–computer interface paradigm for coding"
+  },
+  {
+    "method": "OpenHands",
+    "stage": "S3",
+    "category": "Code Gen.",
+    "venue": "ICLR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=OpenHands%20ICLR%20auto-research",
+    "github": false,
+    "eval": "Open platform for generalist coding agents"
+  },
+  {
+    "method": "SWE-bench Pro",
+    "stage": "S3",
+    "category": "Code Gen.",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SWE-bench%20Pro%20arXiv%20auto-research",
+    "github": false,
+    "eval": "1,865 enterprise problems; best score 23%"
+  },
+  {
+    "method": "SWE-EVO",
+    "stage": "S3",
+    "category": "Code Gen.",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SWE-EVO%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Software evolution benchmark; best score 25% Paper-to-Code"
+  },
+  {
+    "method": "FunSearch",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "Nature",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=FunSearch%20Nature%20auto-research",
+    "github": false,
+    "eval": "Paper-to-Code New cap-set solutions; evolutionary program search"
+  },
+  {
+    "method": "SciCode",
+    "stage": "S3",
     "category": "(unclassified)",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.15345v2",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=SciCode%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research agents are increasingly evaluated on their ability to search for evidence, reason over retrieved sources, and produce grounded…"
+    "eval": "Paper-to-Code Research-level coding across math, physics, chemistry"
   },
   {
-    "method": "Hybrid Open-Ended Tri-Evolution Makes Better Deep Researcher",
-    "stage": "S2",
+    "method": "PaperBench",
+    "stage": "S3",
     "category": "(unclassified)",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.13710v2",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PaperBench%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research and agent evolution serve as de-facto tasks for AI agents in real-world applications toward artificial general intelligence. T…"
+    "eval": "Paper-to-Code 20 ICML’24 papers; 8,316 gradable subtasks"
   },
   {
-    "method": "ReproRepo: Scaling Reproducibility Audits with GitHub Repository Issues",
+    "method": "PaperCoder",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PaperCoder%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper-to-Code 3-stage multi-agent; ML papers to code repos"
+  },
+  {
+    "method": "ResearchCodeBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ResearchCodeBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper-to-Code - 212 novel ML tasks; best 37.3% (Gemini-2.5-Pro)"
+  },
+  {
+    "method": "SciReplicate-Bench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SciReplicate-Bench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper-to-Code 100 tasks from 36 NLP papers; 39% ceiling Experiment Execution & Orchestration"
+  },
+  {
+    "method": "BioPlanner",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=BioPlanner%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Biological protocol planning evaluation"
+  },
+  {
+    "method": "CRISPR-GPT",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=CRISPR-GPT%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - Gene-editing experiment design assistance"
+  },
+  {
+    "method": "DS-Agent",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=DS-Agent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution End-to-end data science workflow automation"
+  },
+  {
+    "method": "MLE-Bench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=MLE-Bench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - 75 Kaggle competitions benchmark"
+  },
+  {
+    "method": "MLAgentBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=MLAgentBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution 13 ML experimentation tasks benchmark"
+  },
+  {
+    "method": "MLR-Copilot",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=MLR-Copilot%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - IdeaAgent + ExperimentAgent dual-agent pipeline"
+  },
+  {
+    "method": "AIDE",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AIDE%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - SOTA on MLE-Bench + RE-Bench; tree search in code space"
+  },
+  {
+    "method": "AlphaEvolve",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AlphaEvolve%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - LLM-generated mutations + automated evaluators"
+  },
+  {
+    "method": "AutoReproduce",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AutoReproduce%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Paper lineage algorithm for experiment reproduction"
+  },
+  {
+    "method": "CURIE",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=CURIE%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Rigorous automated experimentation framework"
+  },
+  {
+    "method": "MLGym",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=MLGym%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - AI research agent gym benchmark"
+  },
+  {
+    "method": "MLR-Bench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=MLR-Bench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - 201 tasks (NeurIPS/ICLR/ICML); 80% fabrication rate"
+  },
+  {
+    "method": "ExecutionGrounded",
     "stage": "S3",
     "category": "(unclassified)",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.18237v1",
+    "link": "https://www.google.com/search?q=ExecutionGrounded%20arXiv%20auto-research",
     "github": false,
-    "eval": "Reproducing research results from papers and released code is central to scientific progress. Existing works have introduced benchmarks to e…"
+    "eval": "Execution - 69.4% vs 48.0% GRPO; parallel GPU search"
   },
   {
-    "method": "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+    "method": "Learn to Discover",
     "stage": "S3",
     "category": "(unclassified)",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.13608v2",
+    "link": "https://www.google.com/search?q=Learn%20to%20Discover%20arXiv%20auto-research",
     "github": false,
-    "eval": "Agent systems are advancing quickly across domains, but their evaluation remains fragmented. Most benchmarks rely on fixed, LLM-centric harn…"
+    "eval": "Execution - Test-time training + RL; math, GPU kernel, biology"
   },
   {
-    "method": "Examining the Cognitive Gap Between Authors and Peer Reviewers on Academic Paper Novelty",
+    "method": "SciNav",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=SciNav%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - Pairwise tree-search branch selection"
+  },
+  {
+    "method": "FrontierScience",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=FrontierScience%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution - Expert-level tasks; Olympiad + PhD difficulty Code Correctness and Reproducibility Assessment"
+  },
+  {
+    "method": "DiscoveryBench",
+    "stage": "S3",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=DiscoveryBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Data-driven insight extraction benchmark"
+  },
+  {
+    "method": "DiscoveryWorld",
+    "stage": "S3",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=DiscoveryWorld%20arXiv%20auto-research",
+    "github": false,
+    "eval": "120 tasks; 8 topics; 3 difficulty levels"
+  },
+  {
+    "method": "InfiAgentDABench",
+    "stage": "S3",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=InfiAgentDABench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "End-to-end data analysis workflow benchmark"
+  },
+  {
+    "method": "ScienceAgentBench",
+    "stage": "S3",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=ScienceAgentBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Rigorous data-driven scientific discovery assessment"
+  },
+  {
+    "method": "LAB-Bench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=LAB-Bench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Multi-domain biology research task benchmark"
+  },
+  {
+    "method": "KernelBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=KernelBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution GPU kernel generation benchmark"
+  },
+  {
+    "method": "TritonBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=TritonBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Triton operator generation benchmark"
+  },
+  {
+    "method": "AstaBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AstaBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution 2,400+ problems; multi-domain scientific research"
+  },
+  {
+    "method": "ResearchClawBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ResearchClawBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution Scientist-aligned workflow benchmark"
+  },
+  {
+    "method": "EXP-Bench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=EXP-Bench%20ICLR%20auto-research",
+    "github": false,
+    "eval": "Execution 461 tasks from 51 AI papers"
+  },
+  {
+    "method": "PostTrainBench",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=PostTrainBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Execution LLM post-training automation benchmark 44"
+  },
+  {
+    "method": "ChartGPT",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "arXiv",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=ChartGPT%20arXiv%20auto-research",
+    "github": false,
+    "eval": "6-step reasoning for chart generation"
+  },
+  {
+    "method": "MatPlotAgent",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=MatPlotAgent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+12.3 over GPT-4 base; VLM visual feedback"
+  },
+  {
+    "method": "over GPT-4 base; VLM visual feedback† 3 CoDA",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=over%20GPT-4%20base%3B%20VLM%20visual%20feedback%E2%80%A0%203%20CoDA%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+41.5% over baselines; multi-agent collaboration"
+  },
+  {
+    "method": "PlotGen",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PlotGen%20arXiv%20auto-research",
+    "github": false,
+    "eval": "4–6% improvement over baselines"
+  },
+  {
+    "method": "VIS-Shepherd",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=VIS-Shepherd%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Figure Editing - Constructive critique feedback framework"
+  },
+  {
+    "method": "DiagramAgent",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "CVPR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=DiagramAgent%20CVPR%20auto-research",
+    "github": false,
+    "eval": "4 specialized agents; 8 diagram categories"
+  },
+  {
+    "method": "StarVector",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "CVPR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=StarVector%20CVPR%20auto-research",
+    "github": false,
+    "eval": "Method Diagrams - Scalable SVG generation from descriptions"
+  },
+  {
+    "method": "VisCoder",
+    "stage": "S4",
+    "category": "Data Viz",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=VisCoder%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "VisCode-200K dataset; 90%+ execution pass rate"
+  },
+  {
+    "method": "AI-Generated Figures",
+    "stage": "S4",
+    "category": "Policy",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AI-Generated%20Figures%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Publisher policy survey (Nature, Science, etc.)"
+  },
+  {
+    "method": "AutoFigure-Edit",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AutoFigure-Edit%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Method Diagrams Editable text-to-SVG scientific illustrations"
+  },
+  {
+    "method": "AutoFigure",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AutoFigure%20ICLR%20auto-research",
+    "github": false,
+    "eval": "Method Diagrams FigureBench (3,300 pairs); publication-ready illust."
+  },
+  {
+    "method": "PaperBanana",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=PaperBanana%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Method Diagrams - 292 test cases; outperforms baselines"
+  },
+  {
+    "method": "SAIL",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=SAIL%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Figure Editing - Domain logic / code syntax separation Table Understanding & Generation"
+  },
+  {
+    "method": "ArxivDIGESTables",
+    "stage": "S4",
+    "category": "Table Gen.",
+    "venue": "EMNLP",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=ArxivDIGESTables%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "Literature comparison table synthesis"
+  },
+  {
+    "method": "Chain-of-Table",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "ICLR",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Chain-of-Table%20ICLR%20auto-research",
+    "github": false,
+    "eval": "Table Reasoning - Multi-step table reasoning chains"
+  },
+  {
+    "method": "ShowTable",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "CVPR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ShowTable%20CVPR%20auto-research",
+    "github": false,
+    "eval": "Table Viz - Collaborative reflection and refinement"
+  },
+  {
+    "method": "Table2LaTeX-RL",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Table2LaTeX-RL%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Table Conversion - Image-to-LaTeX via reinforced multimodal LM Mathematical Formulas & TikZ"
+  },
+  {
+    "method": "AutomaTikZ",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "ICLR",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AutomaTikZ%20ICLR%20auto-research",
+    "github": false,
+    "eval": "TikZ - DaTikZ: first large-scale dataset (120K drawings)"
+  },
+  {
+    "method": "DeTikZify",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "NeurIPS",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=DeTikZify%20NeurIPS%20auto-research",
+    "github": false,
+    "eval": "TikZ - 360K TikZ graphics; MCTS iterative refinement"
+  },
+  {
+    "method": "TikZilla",
+    "stage": "S4",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=TikZilla%20arXiv%20auto-research",
+    "github": false,
+    "eval": "TikZ - 3B/8B matches GPT-5; SFT+RL on expanded DaTikZ Visual Fidelity and Scientific Accuracy Assessment"
+  },
+  {
+    "method": "PlotCraft",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PlotCraft%20arXiv%20auto-research",
+    "github": false,
+    "eval": "1K-task benchmark; 48 chart types"
+  },
+  {
+    "method": "TeXpert",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "SDP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=TeXpert%20SDP%20auto-research",
+    "github": false,
+    "eval": "3-level difficulty; 78.8%/58.7%/17.5%"
+  },
+  {
+    "method": "AbGen",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AbGen%20ACL%20auto-research",
+    "github": false,
+    "eval": "1,500 ablation studies; 807 NLP papers"
+  },
+  {
+    "method": "SciFig",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=SciFig%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Rubric-based evaluation; 2K+ pipeline figures"
+  },
+  {
+    "method": "SciFlow-Bench",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=SciFlow-Bench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "500 framework figures; inverse-parsing evaluation"
+  },
+  {
+    "method": "FigureBench",
+    "stage": "S4",
+    "category": "Benchmark",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=FigureBench%20ICLR%20auto-research",
+    "github": false,
+    "eval": "3,300 text-figure pairs; publication-ready eval 45 A.2 Phase 2: Writing"
+  },
+  {
+    "method": "CoAuthor",
+    "stage": "S5",
+    "category": "Collaborative",
+    "venue": "arXiv",
+    "year": 2022,
+    "link": "https://www.google.com/search?q=CoAuthor%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Human–AI collaborative writing workflows"
+  },
+  {
+    "method": "Script&Shift",
+    "stage": "S5",
+    "category": "Source Transform",
+    "venue": "CHI",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Script%26Shift%20CHI%20auto-research",
+    "github": false,
+    "eval": "CHI Honorable Mention; preserves cognitive engagement"
+  },
+  {
+    "method": "AI Writing Study",
+    "stage": "S5",
+    "category": "Empirical",
+    "venue": "AIED",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AI%20Writing%20Study%20AIED%20auto-research",
+    "github": false,
+    "eval": "Study - 90-student RCT; purposeful AI fosters writing"
+  },
+  {
+    "method": "OpenDraft",
+    "stage": "S5",
+    "category": "Full Draft Gen.",
+    "venue": "—",
+    "year": "",
+    "link": "https://www.google.com/search?q=OpenDraft%20%20auto-research",
+    "github": false,
+    "eval": "19 agents; 20K+ words in 10 min; verified citations"
+  },
+  {
+    "method": "DraftMarks",
+    "stage": "S5",
+    "category": "Transparency",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=DraftMarks%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Skeuomorphic visual traces for AI process transparency"
+  },
+  {
+    "method": "PaperDebugger",
+    "stage": "S5",
+    "category": "In-Editor Assist",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PaperDebugger%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent Overleaf plugin (Reviewer+Enhancer+Scorer)"
+  },
+  {
+    "method": "ScholarCopilot",
+    "stage": "S5",
+    "category": "Citation Assist",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ScholarCopilot%20arXiv%20auto-research",
+    "github": false,
+    "eval": "40.1% top-1 citation accuracy (vs 15.0% E5Mistral)"
+  },
+  {
+    "method": "XtraGPT",
+    "stage": "S5",
+    "category": "Post-Writing",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=XtraGPT%20arXiv%20auto-research",
+    "github": false,
+    "eval": "1.5B–14B models; 7K papers; 140K revision pairs"
+  },
+  {
+    "method": "LimAgents",
+    "stage": "S5",
+    "category": "Limitations Gen.",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=LimAgents%20arXiv%20auto-research",
+    "github": false,
+    "eval": "OpenReview comments + citation network integration Fully Automated Paper Generation"
+  },
+  {
+    "method": "CycleResearcher",
+    "stage": "S5",
+    "category": "E2E Gen.",
+    "venue": "ICLR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=CycleResearcher%20ICLR%20auto-research",
+    "github": false,
+    "eval": "5.36 ICLR scale (vs 5.24 preprint, 5.69 accepted)"
+  },
+  {
+    "method": "Agent Laboratory",
+    "stage": "S5",
+    "category": "E2E Gen.",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Agent%20Laboratory%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "$2–13/paper; 84% cost reduction; 3.5–4.0 score"
+  },
+  {
+    "method": "FutureGen",
+    "stage": "S5",
+    "category": "Section Gen.",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=FutureGen%20arXiv%20auto-research",
+    "github": false,
+    "eval": "RAG-based Future Work section generation"
+  },
+  {
+    "method": "AI Scientist",
+    "stage": "S5",
+    "category": "E2E Gen.",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AI%20Scientist%20Nature%20auto-research",
+    "github": false,
+    "eval": "$15/paper; end-to-end across 3 ML subfields"
+  },
+  {
+    "method": "APRES",
+    "stage": "S5",
+    "category": "Rubric Revision",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=APRES%20arXiv%20auto-research",
+    "github": false,
+    "eval": "79% expert preference; citation-predictive rubrics Societal Analysis"
+  },
+  {
+    "method": "AI Writing Adoption",
+    "stage": "S5",
+    "category": "Measurement",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AI%20Writing%20Adoption%20Nature%20auto-research",
+    "github": false,
+    "eval": "41.3M papers; AI expands impact but contracts focus"
+  },
+  {
+    "method": "Nature AI Survey",
+    "stage": "S5",
+    "category": "Survey",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Nature%20AI%20Survey%20Nature%20auto-research",
+    "github": false,
+    "eval": "57% of researchers use AI in peer review Writing Quality and AI Detection Assessment"
+  },
+  {
+    "method": "Mapping LLM Use",
+    "stage": "S5",
+    "category": "Detection",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Mapping%20LLM%20Use%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Up to 17.5% of CS papers AI-modified"
+  },
+  {
+    "method": "CycleReviewer",
+    "stage": "S5",
+    "category": "AI Judge",
+    "venue": "ICLR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=CycleReviewer%20ICLR%20auto-research",
+    "github": false,
+    "eval": "26.89% MAE reduction vs individual human reviewers"
+  },
+  {
+    "method": "Stanford Agentic",
+    "stage": "S5",
+    "category": "AI Judge",
+    "venue": "Web",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Stanford%20Agentic%20Web%20auto-research",
+    "github": false,
+    "eval": "ρ = 0.42vs humanρ = 0.41; matches consistency"
+  },
+  {
+    "method": "SciIG",
+    "stage": "S5",
+    "category": "Writing Bench",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SciIG%20arXiv%20auto-research",
+    "github": false,
+    "eval": "NAACL/ICLR 2025 introduction writing benchmark"
+  },
+  {
+    "method": "Watermarking",
+    "stage": "S5",
+    "category": "Detection",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Watermarking%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Near-zero false-positive rate under controlled conditions"
+  },
+  {
+    "method": "PaperWritingBench",
+    "stage": "S5",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=PaperWritingBench%20arXiv%20auto-research",
+    "github": false,
+    "eval": "200 reverse-engineered top-tier conference papers 46 A.3 Phase 3: Validation"
+  },
+  {
+    "method": "ChatReviewer",
     "stage": "S6",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.13452v1",
+    "category": "Review Gen.",
+    "venue": "GitHub",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=ChatReviewer%20GitHub%20auto-research",
     "github": false,
-    "eval": "Novelty is a crucial metric for assessing the quality of academic papers. Scholars strive to highlight the novel aspects of their work, part…"
+    "eval": "ChatGPT-based strengths/weaknesses analysis"
   },
   {
-    "method": "From Passive Generation to Investigation: A Proactive Scientific Peer Review Agent",
+    "method": "AI-Peer-Review",
     "stage": "S6",
-    "category": "(unclassified)",
-    "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.13349v1",
+    "category": "Review Gen.",
+    "venue": "GitHub",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AI-Peer-Review%20GitHub%20auto-research",
     "github": false,
-    "eval": "Large language models (LLMs) have shown promise in automating scientific peer review. However, existing approaches often struggle to generat…"
+    "eval": "Multi-LLM independent reviews + meta-review synthesis"
   },
   {
-    "method": "No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions",
+    "method": "MARG",
     "stage": "S6",
-    "category": "(unclassified)",
+    "category": "Review Gen.",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.13044v1",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=MARG%20arXiv%20auto-research",
     "github": false,
-    "eval": "As AI-generated reviews move from experimental tools into peer-review infrastructure, most robustness concerns have focused on explicit atta…"
+    "eval": "3.7 good comments/paper (2.2×over baseline)"
   },
   {
-    "method": "Does AI Reviewer See the Full Picture? Attacking and Defending Multimodal Peer Review",
+    "method": "Reviewer2",
     "stage": "S6",
-    "category": "(unclassified)",
+    "category": "Review Gen.",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.12716v1",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Reviewer2%20arXiv%20auto-research",
     "github": false,
-    "eval": "The integration of Large Language Models (LLMs) and Multimodal LLMs (MLLMs) into scientific peer-review workflows introduces novel and signi…"
+    "eval": "Two-stage prompt-based review aspect modeling"
   },
   {
-    "method": "Externalizing Research Synthesis and Validation in AI Scientists through a Research Harness",
+    "method": "ReviewRL",
+    "stage": "S6",
+    "category": "Review Gen.",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ReviewRL%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "RL + RAG; factually grounded reviews"
+  },
+  {
+    "method": "DeepReviewer",
+    "stage": "S6",
+    "category": "Review Gen.",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=DeepReviewer%20arXiv%20auto-research",
+    "github": false,
+    "eval": "88.21% win rate vs GPT-o1; 64% accept/reject acc."
+  },
+  {
+    "method": "OpenReviewer",
+    "stage": "S6",
+    "category": "Review Gen.",
+    "venue": "NAACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=OpenReviewer%20NAACL%20auto-research",
+    "github": false,
+    "eval": "Llama-8B fine-tuned on 79K expert reviews"
+  },
+  {
+    "method": "REMOR",
+    "stage": "S6",
+    "category": "Review Gen.",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=REMOR%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-objective RL review optimization"
+  },
+  {
+    "method": "ScholarPeer",
+    "stage": "S6",
+    "category": "Review Gen.",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ScholarPeer%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Context-aware multi-agent; literature verification Meta-Review & Reviewer Matching"
+  },
+  {
+    "method": "AgentReview",
+    "stage": "S6",
+    "category": "Meta-Review",
+    "venue": "EMNLP",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AgentReview%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "Fullreviewlifecyclesimulation; social/authoritybias"
+  },
+  {
+    "method": "Meta-Review LLMs",
+    "stage": "S6",
+    "category": "Meta-Review",
+    "venue": "NAACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Meta-Review%20LLMs%20NAACL%20auto-research",
+    "github": false,
+    "eval": "40 ICLR papers; GPT-3.5/LLaMA-2/PaLM-2 compared"
+  },
+  {
+    "method": "RATE",
+    "stage": "S6",
+    "category": "Matching",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=RATE%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Expertise-based matching via profile distillation Adversarial Attacks & Bias Analysis"
+  },
+  {
+    "method": "Rainaet al.",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "EMNLP",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Rainaet%20al.%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "Benign adjectives as universal adversarial triggers"
+  },
+  {
+    "method": "AI Review Lottery",
+    "stage": "S6",
+    "category": "Bias Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AI%20Review%20Lottery%20arXiv%20auto-research",
+    "github": false,
+    "eval": "15.8% ICLR reviews AI-assisted; +4.9pp borderline"
+  },
+  {
+    "method": "Yeet al.",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=Yeet%20al.%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Scores inflated to∼8; 5% manipulation flips 12%"
+  },
+  {
+    "method": "Breaking the Reviewer",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Breaking%20the%20Reviewer%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Systematic adversarial robustness evaluation"
+  },
+  {
+    "method": "LLM Reviewer Bias",
+    "stage": "S6",
+    "category": "Bias Analysis",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=LLM%20Reviewer%20Bias%20arXiv%20auto-research",
+    "github": false,
+    "eval": "1,441 papers; 95.8% rejected misclassified as acceptable"
+  },
+  {
+    "method": "Prompt Injection",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Prompt%20Injection%20arXiv%20auto-research",
+    "github": false,
+    "eval": "White-text injection; up to 100% acceptance scores"
+  },
+  {
+    "method": "Sahooet al.",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Sahooet%20al.%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+13.95 on Mistral; 13 LLMs; 15 attack strategies"
+  },
+  {
+    "method": "Zhouet al.",
+    "stage": "S6",
+    "category": "Adversarial",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Zhouet%20al.%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+1.24 to +2.80 from hype prose; 10.00 under iteration Detection & Policy"
+  },
+  {
+    "method": "AI Detection",
+    "stage": "S6",
+    "category": "Detection",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AI%20Detection%20arXiv%20auto-research",
+    "github": false,
+    "eval": "788,984 AI-written reviews; 18 detection algorithms"
+  },
+  {
+    "method": "AI Use Rejects",
+    "stage": "S6",
+    "category": "Policy",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AI%20Use%20Rejects%20Nature%20auto-research",
+    "github": false,
+    "eval": "497 papers rejected (∼2% of submissions)"
+  },
+  {
+    "method": "Nature AI Survey",
+    "stage": "S6",
+    "category": "Survey",
+    "venue": "Nature",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Nature%20AI%20Survey%20Nature%20auto-research",
+    "github": false,
+    "eval": "1,600 academics; 57% use AI in peer review"
+  },
+  {
+    "method": "Policy Enforcement",
+    "stage": "S6",
+    "category": "Policy",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Policy%20Enforcement%20arXiv%20auto-research",
+    "github": false,
+    "eval": "All 5 SOTA detectors misclassify LLM-polished reviews"
+  },
+  {
+    "method": "Reviewer Feedback",
+    "stage": "S6",
+    "category": "Empirical",
+    "venue": "CHI",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Reviewer%20Feedback%20CHI%20auto-research",
+    "github": false,
+    "eval": "ICLR 2025 live process; reviewer engagement study† Review Consistency and Bias Assessment"
+  },
+  {
+    "method": "Review Survey",
+    "stage": "S6",
+    "category": "Survey",
+    "venue": "IF",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Review%20Survey%20IF%20auto-research",
+    "github": false,
+    "eval": "Comprehensive taxonomy of review methods"
+  },
+  {
+    "method": "Stanford Agentic",
+    "stage": "S6",
+    "category": "Quality",
+    "venue": "Web",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Stanford%20Agentic%20Web%20auto-research",
+    "github": false,
+    "eval": "ρ= 0.42vs humanρ= 0.41; matches consistency"
+  },
+  {
+    "method": "ClaimCheck",
+    "stage": "S6",
+    "category": "Quality",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ClaimCheck%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "LLM critique grounding; gaps in factual basis"
+  },
+  {
+    "method": "ReViewGraph",
+    "stage": "S6",
+    "category": "Quality",
+    "venue": "AAAI",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ReViewGraph%20AAAI%20auto-research",
+    "github": false,
+    "eval": "+15.73% avg improvement via heterogeneous graph"
+  },
+  {
+    "method": "ReviewAgents",
+    "stage": "S6",
+    "category": "Quality",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ReviewAgents%20arXiv%20auto-research",
+    "github": false,
+    "eval": "37,403 papers; 142,324 reviews; Review-CoT dataset"
+  },
+  {
+    "method": "ICLR 2025 Study",
+    "stage": "S6",
+    "category": "Quality",
+    "venue": "NMI",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ICLR%202025%20Study%20NMI%20auto-research",
+    "github": false,
+    "eval": "22,467reviews; 89%qualityimproved; noacceptance effect 47"
+  },
+  {
+    "method": "ReviewMT",
+    "stage": "S7",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=ReviewMT%20arXiv%20auto-research",
+    "github": false,
+    "eval": "26,841 papers; 92,017 reviews; multi-turn dialogue"
+  },
+  {
+    "method": "ICLR Rebuttal Study",
+    "stage": "S7",
+    "category": "Analysis",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ICLR%20Rebuttal%20Study%20arXiv%20auto-research",
+    "github": false,
+    "eval": "ICLR 2024–2025; score transition analysis Automated Rebuttal Generation"
+  },
+  {
+    "method": "ReviewerToo",
+    "stage": "S7",
+    "category": "Modular Pipeline",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ReviewerToo%20arXiv%20auto-research",
+    "github": false,
+    "eval": "81.8% accept/reject accuracy (vs 83.9% human)"
+  },
+  {
+    "method": "RebuttalAgent",
+    "stage": "S7",
+    "category": "Rebuttal",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=RebuttalAgent%20ICLR%20auto-research",
+    "github": false,
+    "eval": "Gen. 18.3% avg improvement; ToM-grounded"
+  },
+  {
+    "method": "Author-in-theLoop",
+    "stage": "S7",
+    "category": "(unclassified)",
+    "venue": "ACL",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Author-in-theLoop%20ACL%20auto-research",
+    "github": false,
+    "eval": "Author-Aware - Integrates author expertise and intent"
+  },
+  {
+    "method": "DRPG",
+    "stage": "S7",
+    "category": "Rebuttal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=DRPG%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Gen. 98%+ planning accuracy; surpasses avg human quality"
+  },
+  {
+    "method": "Paper2Rebuttal",
+    "stage": "S7",
+    "category": "Rebuttal",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Paper2Rebuttal%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Gen. - Evidence-centric rebuttal planning Rebuttal Effectiveness Assessment"
+  },
+  {
+    "method": "Re2",
+    "stage": "S7",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Re2%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Dataset - 19,926 submissions; 70,668 reviews; 53,818 rebuttals"
+  },
+  {
+    "method": "Commitment Checklist",
+    "stage": "S7",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Commitment%20Checklist%20arXiv%20auto-research",
+    "github": false,
+    "eval": "11.8 commitments/paper;∼25% unfulfilled"
+  },
+  {
+    "method": "Re3Align",
+    "stage": "S7",
+    "category": "(unclassified)",
+    "venue": "ACL",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Re3Align%20ACL%20auto-research",
+    "github": false,
+    "eval": "Dataset - First large-scale aligned review–response–revision triplets 48 A.4 Phase 4: Dissemination"
+  },
+  {
+    "method": "P2P",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "ICLR",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=P2P%20ICLR%20auto-research",
+    "github": false,
+    "eval": "P2PInstruct 30K+ examples; 3 specialized agents"
+  },
+  {
+    "method": "Paper2Poster",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "NeurIPS",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Paper2Poster%20NeurIPS%20auto-research",
+    "github": false,
+    "eval": "$0.005/poster; 87% fewer tokens vs GPT-4o"
+  },
+  {
+    "method": "PosterForest",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PosterForest%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Hierarchical multi-agent collaboration"
+  },
+  {
+    "method": "PosterGen",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PosterGen%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Aesthetic-aware multi-agent generation"
+  },
+  {
+    "method": "APEX",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=APEX%20arXiv%20auto-research",
+    "github": false,
+    "eval": "First agentic interactive poster editing"
+  },
+  {
+    "method": "PosterOmni",
+    "stage": "S8",
+    "category": "Paper2Poster",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=PosterOmni%20arXiv%20auto-research",
+    "github": false,
+    "eval": "6 unified poster tasks; outperforms open-source Paper2Slides"
+  },
+  {
+    "method": "DOC2PPT",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "AAAI",
+    "year": 2022,
+    "link": "https://www.google.com/search?q=DOC2PPT%20AAAI%20auto-research",
+    "github": false,
+    "eval": "5,873 paired document–slide decks"
+  },
+  {
+    "method": "PPTAgent",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PPTAgent%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "PPTEval benchmark; 10,448 curated presentations"
+  },
+  {
+    "method": "AutoPresent",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "CVPR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AutoPresent%20CVPR%20auto-research",
+    "github": false,
+    "eval": "8B Llama model; SlidesBench (7K train, 585 test)"
+  },
+  {
+    "method": "Paper2Slides",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "GitHub",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Paper2Slides%20GitHub%20auto-research",
+    "github": false,
+    "eval": "4-stage RAG pipeline; one-click conversion"
+  },
+  {
+    "method": "Auto-Slides",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Auto-Slides%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent Beamer generation; interactive editing"
+  },
+  {
+    "method": "PASS",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PASS%20arXiv%20auto-research",
+    "github": false,
+    "eval": "First combined slides + AI audio delivery"
+  },
+  {
+    "method": "SlideGen",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SlideGen%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent VLM coordination; editable PPTX output"
+  },
+  {
+    "method": "Talk to Your Slides",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Talk%20to%20Your%20Slides%20arXiv%20auto-research",
+    "github": false,
+    "eval": "+34% instruction fidelity; 87% lower cost vs GUI"
+  },
+  {
+    "method": "SlideTailor",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "AAAI",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=SlideTailor%20AAAI%20auto-research",
+    "github": false,
+    "eval": "User-preference conditioned; chain-of-speech"
+  },
+  {
+    "method": "DeepPresenter",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=DeepPresenter%20arXiv%20auto-research",
+    "github": false,
+    "eval": "9B model competitive with frontier at lower cost"
+  },
+  {
+    "method": "Office Raccoon",
+    "stage": "S8",
+    "category": "Paper2Slides",
+    "venue": "Web",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=Office%20Raccoon%20Web%20auto-research",
+    "github": false,
+    "eval": "Page-level editing; template/brand-guideline learning† Paper2Video"
+  },
+  {
+    "method": "Preacher",
+    "stage": "S8",
+    "category": "(unclassified)",
+    "venue": "ICCV",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Preacher%20ICCV%20auto-research",
+    "github": false,
+    "eval": "Paper2Video Top-down decomposition; 5 research fields"
+  },
+  {
+    "method": "Paper2Video",
+    "stage": "S8",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Paper2Video%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper2Video 101 paper–video pairs; +10% PresentQuiz accuracy"
+  },
+  {
+    "method": "PresentAgent",
+    "stage": "S8",
+    "category": "(unclassified)",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PresentAgent%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "Paper2Video PresentEval benchmark; approaches humanlevel Paper2Web & Social Media"
+  },
+  {
+    "method": "Paper2Web",
+    "stage": "S8",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Paper2Web%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper2Web 10,716 papers; multimedia-rich academic homepages Fidelity and Adoption Assessment"
+  },
+  {
+    "method": "PPTEval",
+    "stage": "S8",
+    "category": "Benchmark",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PPTEval%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "Content, design, coherence; 10,448 presentations"
+  },
+  {
+    "method": "PresentQuiz",
+    "stage": "S8",
+    "category": "Benchmark",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PresentQuiz%20arXiv%20auto-research",
+    "github": false,
+    "eval": "101 paper–video pairs; +10% over human on comprehension"
+  },
+  {
+    "method": "PresentEval",
+    "stage": "S8",
+    "category": "Benchmark",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PresentEval%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "End-to-end narrated video quality; near humanlevel 49 A.5 Cross-Phase: End-to-End Systems"
+  },
+  {
+    "method": "AI Scientist",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "arXiv",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AI%20Scientist%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Pioneered E2E at $15/paper; ICLR-scale review"
+  },
+  {
+    "method": "Agent Laboratory",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "EMNLP",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Agent%20Laboratory%20EMNLP%20auto-research",
+    "github": false,
+    "eval": "$2–13/paper; 3.5–4.0 NeurIPS scale"
+  },
+  {
+    "method": "AI-Researcher",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AI-Researcher%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Scientist-Bench; approaches human-level quality"
+  },
+  {
+    "method": "CycleResearcher",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "ICLR",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=CycleResearcher%20ICLR%20auto-research",
+    "github": false,
+    "eval": "5.36 ICLR scale; cyclic write–review"
+  },
+  {
+    "method": "AI Scientist v2",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AI%20Scientist%20v2%20arXiv%20auto-research",
+    "github": false,
+    "eval": "E2E + Tree Search ICLR 2025 ICBINB workshop; score 6.33"
+  },
+  {
+    "method": "Kosmos",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Kosmos%20arXiv%20auto-research",
+    "github": false,
+    "eval": "79.4% claim accuracy"
+  },
+  {
+    "method": "discoveries; 4 domains 7 Dolphin",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=discoveries%3B%204%20domains%207%20Dolphin%20ACL%20auto-research",
+    "github": false,
+    "eval": "Closed-loop auto-research pipeline"
+  },
+  {
+    "method": "CodeScientist",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "ACL",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=CodeScientist%20ACL%20auto-research",
+    "github": false,
+    "eval": "Hypothesis to verification; closed-loop"
+  },
+  {
+    "method": "InternAgent",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=InternAgent%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Closed-loop hypothesis to verification"
+  },
+  {
+    "method": "freephdlabor",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=freephdlabor%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Personalized research group; continual automation"
+  },
+  {
+    "method": "SciMaster",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=SciMaster%20arXiv%20auto-research",
+    "github": false,
+    "eval": "General-purpose scientific AI agents"
+  },
+  {
+    "method": "ARIS",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "GitHub",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ARIS%20GitHub%20auto-research",
+    "github": false,
+    "eval": "Skill Library 31 skills; score 5.0→7.5; 20+ GPU experiments"
+  },
+  {
+    "method": "EvoScientist",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=EvoScientist%20arXiv%20auto-research",
+    "github": false,
+    "eval": "6 papers accepted at ICAIS’25"
+  },
+  {
+    "method": "UniScientist",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "Web",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=UniScientist%20Web%20auto-research",
+    "github": false,
+    "eval": "30B open-source; beats Claude Opus 4.5"
+  },
+  {
+    "method": "ASI-Evolve",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "GitHub",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=ASI-Evolve%20GitHub%20auto-research",
+    "github": false,
+    "eval": "+0.97 DeltaNet; +18 MMLU; +12.5 GRPO"
+  },
+  {
+    "method": "AiScientist-LH",
     "stage": "E2E",
     "category": "(unclassified)",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.18874v1",
+    "link": "https://www.google.com/search?q=AiScientist-LH%20arXiv%20auto-research",
     "github": false,
-    "eval": "AI systems can increasingly automate scientific workflows, but the reasoning that links prior evidence, generated ideas, experiments and fin…"
+    "eval": "E2E + Hierarchical - Long-horizon ML engineering; File-as-Bus"
   },
   {
-    "method": "S1-DeepResearch: Beyond Search, Toward Real-World Long-Horizon Research Agents",
+    "method": "AutoSOTA",
+    "stage": "E2E",
+    "category": "E2E Pipeline",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AutoSOTA%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Paper-to-code-to-SOTA optimization"
+  },
+  {
+    "method": "CORAL",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=CORAL%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Multi-agent evolution; SOTA on 10 tasks"
+  },
+  {
+    "method": "FARS",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "Web",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=FARS%20Web%20auto-research",
+    "github": false,
+    "eval": "100 papers in 228h; avg 5.05 ICLR scale"
+  },
+  {
+    "method": "AutoResearchClaw",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "GitHub",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=AutoResearchClaw%20GitHub%20auto-research",
+    "github": false,
+    "eval": "fully autonomous 23-stage pipeline Domain-Specific Systems"
+  },
+  {
+    "method": "Coscientist",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "Nature",
+    "year": 2023,
+    "link": "https://www.google.com/search?q=Coscientist%20Nature%20auto-research",
+    "github": false,
+    "eval": "Chemistry - Autonomous chemistry; LLM-driven tool use"
+  },
+  {
+    "method": "AlphaFold 3",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "Nature",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=AlphaFold%203%20Nature%20auto-research",
+    "github": false,
+    "eval": "Biology - Biomolecular structure prediction"
+  },
+  {
+    "method": "ChemCrow",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "NMI",
+    "year": 2024,
+    "link": "https://www.google.com/search?q=ChemCrow%20NMI%20auto-research",
+    "github": false,
+    "eval": "Chemistry - Chemistry tool orchestration"
+  },
+  {
+    "method": "Medical AI Scientist",
     "stage": "E2E",
     "category": "(unclassified)",
     "venue": "arXiv",
     "year": 2026,
-    "link": "http://arxiv.org/abs/2606.15367v1",
+    "link": "https://www.google.com/search?q=Medical%20AI%20Scientist%20arXiv%20auto-research",
     "github": false,
-    "eval": "Deep research agents aim to solve complex knowledge-intensive tasks through long-horizon planning, evidence gathering, reasoning, and report…"
+    "eval": "Medicine - Clinical research automation Evolutionary & Self-Improving Systems"
   },
   {
-    "method": "Toward Generalist Autonomous Research via Hypothesis-Tree Refinement",
+    "method": "ShinkaEvolve",
     "stage": "E2E",
     "category": "(unclassified)",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.11926v1",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ShinkaEvolve%20arXiv%20auto-research",
     "github": false,
-    "eval": "Scientific progress depends on a repeated loop of exploration, experimentation, and abstraction. Researchers test candidate directions, inte…"
+    "eval": "Evolutionary Open-ended sample-efficient program evolution"
   },
   {
-    "method": "Search Discipline for Long-Horizon Research Agents",
+    "method": "Darwin Godel Machine",
+    "stage": "E2E",
+    "category": "Self-Improving",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Darwin%20Godel%20Machine%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Open-ended evolution of self-improving agents Research Platforms & Infrastructure"
+  },
+  {
+    "method": "R&D-Agent",
     "stage": "E2E",
     "category": "(unclassified)",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.11522v1",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=R%26D-Agent%20arXiv%20auto-research",
     "github": false,
-    "eval": "Autoresearch agents now propose, evaluate, and select scientific candidates against a metric, and that metric is usually an aggregate reduce…"
+    "eval": "Infrastructure Researcher+Developer dual-agent; MLE-Bench top"
   },
   {
-    "method": "What Fits (Into Few Tokens) Doesn't Overfit: Compression and Generalization in ML Research Agents",
+    "method": "autoresearch",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "GitHub",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=autoresearch%20GitHub%20auto-research",
+    "github": false,
+    "eval": "Infrastructure ∼12 exp/hour overnight"
+  },
+  {
+    "method": "Google AI Co-scientist",
     "stage": "E2E",
     "category": "(unclassified)",
     "venue": "arXiv",
-    "year": 2026,
-    "link": "http://arxiv.org/abs/2606.11045v1",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=Google%20AI%20Co-scientist%20arXiv%20auto-research",
     "github": false,
-    "eval": "Reusing a held-out benchmark adaptively should, in principle, invite overfitting. Yet benchmark-driven machine learning (ML) has produced su…"
+    "eval": "Platform - Multi-agent hypothesis gen + validation"
+  },
+  {
+    "method": "ResearchTown",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "ICML",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=ResearchTown%20ICML%20auto-research",
+    "github": false,
+    "eval": "Simulates research community with LLM agents"
+  },
+  {
+    "method": "AgentRxiv",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=AgentRxiv%20arXiv%20auto-research",
+    "github": false,
+    "eval": "11.4% improvement on MATH-500"
+  },
+  {
+    "method": "LabClaw",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "Web",
+    "year": 2026,
+    "link": "https://www.google.com/search?q=LabClaw%20Web%20auto-research",
+    "github": false,
+    "eval": "Skill Library 206 biomedical skills; always-on autonomous lab agent"
+  },
+  {
+    "method": "PiFlow",
+    "stage": "E2E",
+    "category": "Multi-Agent",
+    "venue": "arXiv",
+    "year": 2025,
+    "link": "https://www.google.com/search?q=PiFlow%20arXiv%20auto-research",
+    "github": false,
+    "eval": "Principle-aware scientific discovery 50 B Survey Coverage Comparison & Taxonomy Analysis Table 12 compares our coverage with five closely related concurrent efforts. The goal is not to rank surveys, but to clarify how our lifecycle framework differs in scope and organization. Our eight-stage framework subsumes several prior taxonomies while making two distinctions explicit: AI auto-research should be analyzed across the complete lifecycle, and stages should be grouped by epistemological function rather than only by task name or autonomy level. • AI4Research[ 26] defines five task categories: Comprehension, Survey, Discovery, Writing, and Review. These overlap with our S1– S3, S5, and S6. Our framework newly elevates S4 (Tables & Figures), S7 (Rebuttal & Revision), and S8 (Dissemination) as independent lifecycle stages. • From Automation to Autonomy[ 264] organizes systems by autonomy level, from tool-like assistance to scientist-level automation. This axis is complementary: each of our stages can be instantiated at different autonomy levels, while our framework specifieswherein the research lifecycle the system operates. • LLM4SR[ 126] proposes a four-part view centered on hypothesis, experiment, writing, and review. This structure is close to ours, but does not separately model rebuttal and revision as a feedback stage. Our Validation phase separates S6 from S7, making the review–response loop explicit. • Automated Scholarly Paper Review[ 272] provide in-depth coverage of review generation, quality assessment, and reviewer–paper matching. They are complementary to our work: they focus onS6, while our framework places peer review within the broader lifecycle. • AI Scientist Survey[ 205] focus on autonomous or semi-autonomous scientific discovery, overlapping mainly with S1– S3 and S5. Our framework extends this view by also covering scientific visualization, peer validation, rebuttal, and dissemination. Table 12Comparison of survey coverage across our four-phase research lifecycle framework. ✓ = in-depth coverage,◦ = partial coverage, — = not covered,⋆new= newly introduced stage. Stage OursLLM4SR2501 PR Survey2501 Auto→Auton2505 AI4Research2507 AI Scientists2510 Phase 1: Creation S1: Idea Generation novelty, feasibility, multi-agent ✓ ✓—✓ ✓ ✓ S2: Literature Review retrieval, survey gen, deep research ✓ — —✓ ✓ ✓ S3: Coding & Experiments paper-to-code, execution, analysis ✓ ✓—✓ ✓ ✓ S4: Figures & Tables diagrams, plots, formulas ✓ — —◦ ◦— Phase 2: Writing S5: Paper Writing semi-auto, full-auto, detection ✓ ✓—◦✓ ✓ Phase 3: Validation S6: Peer Review auto-review, matching, quality ✓ ✓ ✓◦✓— S7: Rebuttal & Revision comment analysis, rebuttal gen ⋆new — — — — — Phase 4: Dissemination S8: Dissemination poster, slides, video, social ⋆new — — — — — Stages covered 8/8 4 1 5 5 4 These comparisons show that prior taxonomies often list research tasks sequentially, while leaving functional distinctions and feedback loops implicit. Our four-phase framework makes these dependencies explicit. For example, S6 (Peer Review) and S7 (Rebuttal & Revision) do not simply follow paper writing as isolated downstream steps; they can redirect the workflow back to S3 for additional experiments, S4 for revised figures or tables, and S5 for manuscript restructuring. Similarly, dissemination artifacts in S8 may expose ambiguities in the original framing, requiring revisions to claims, explanations, or visual evidence. These cross-stage dependencies are central to real research practice and are especially important for AI-assisted workflows, where errors can propagate from generated ideas to experiments, from experiments to claims, and from claims to public-facing summaries. By organizing the field intoCreation,Writing,Validation, andDissemination, our framework highlights not only which stages are covered by existing systems, but also where evidence, claims, critique, and communication must remain aligned. 51 References [1] J. Abramson, J. Adler, J. Dunger, R. Evans, T. Green, A. Pritzel, O. Ronneberger, L. Willmore, A. J. Ballard, J. Bambrick, S. W. Bodenstein, D. A. Evans, C.-C. Hung, M. O’Neill, D. Reiman, K. Tunyasuvunakool, Z. Wu, A. Žemgulyt˙ e, E. Arvaniti, C. Beattie, O. Bertolusso, A. Sherwood, J. M. Jumper, and D. Hassabis. Accurate structure prediction of biomolecular interactions with AlphaFold 3.Nature, 630:493–500, 2024. [2] S. Agarwal, G. Sahu, A. Puri, I. H. Laradji, K. D. Dvijotham, J. Stanley, L. Charlin, and C. Pal. LitLLM: A toolkit for literature review with large language models.arXiv preprint arXiv:2402.01788, 2024. [3] T. Aggarwal and A. Bhand. PASS: Presentation automation for slide generation and speech.arXiv preprint arXiv:2501.06497, 2025. [4] A. Ajith, M. Xia, A. Chevalier, T. Goyal, D. Chen, and T. Gao. LitSearch: A retrieval benchmark for scientific literature search. InConference on Empirical Methods in Natural Language Processing, 2024. [5] I. Al Azher, M. J. Mokarrama, Z. Guo, S. R. Choudhury, and H. Alhoori. FutureGen: A RAG-based approach to generate the future work of scientific article.arXiv preprint arXiv:2503.16561, 2025. [6] I. Al Azher, Z. Guo, and H. Alhoori. Multi-agent LLMs for generating research limitations.arXiv preprint arXiv:2601.11578, 2026. [7] Alibaba NLP. Tongyi DeepResearch: An agentic LLM for long-horizon deep information seeking. https: //github.com/Alibaba-NLP/DeepResearch, 2025. [8] Analemma.ai. FARS: Fully automated research system.https://analemma.ai/blog/introducing-fars, 2026. [9] A. Asai, J. He, R. Shao, W. Shi, A. Singh, J. C. Chang, K. Lo, L. Soldaini, S. Feldman, M. D’Arcy, D. Wadden, M. Latzke, J. Sparks, J. D. Hwang, V. Kishore, M. Tian, P. Ji, S. Liu, H. Tong, B. Wu, Y. Xiong, L. Zettlemoyer, G. Neubig, D. S. Weld, D. Downey, W. tau Yih, P. W. Koh, and H. Hajishirzi. Synthesizing scientific literature with retrieval-augmented language models.Nature, 650:857–863, 2026. doi: 10.1038/s41586-025-10072-4. URL https://doi.org/10.1038/s41586-025-10072-4. [10] J. Baek, S. K. Jauhar, S. Cucerzan, and S. J. Hwang. ResearchAgent: Iterative research idea generation over scientific literature with large language models. InProceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), pages 6709–6738, 2025. doi: 10.18653/v1/2025.naacl-long.342. URLhttps://aclanthology.org/ 2025.naacl-long.342/. [11] C. Beger and C.-L. Henneking. Citegeist: Automated generation of related work analysis on the arXiv corpus. arXiv preprint arXiv:2503.23229, 2025. [12] J. Belouadi, A. Lauscher, and S. Eger. AutomaTikZ: Text-guided synthesis of scientific vector graphics with TikZ. InInternational Conference on Learning Representations, 2024. [13] J. Belouadi, S. P. Ponzetto, and S. Eger. DeTikZify: Synthesizing graphics programs for scientific figures and sketches with TikZ. InAdvances in Neural Information Processing Systems, volume 37, pages 85074–85108, 2024. [14] Blog. 228 hours of non-stop work to produce 100 papers, burning through 11.4 billion tokens: Fars has gone crazy.https://eu.36kr.com/en/p/3696795271966336, 2026. [15] D. A. Boiko, R. MacKnight, B. Kline, and G. Gomes. Autonomous chemical research with large language models. Nature, 624(7992):570–578, 2023. [16] J. Bragg, M. D’Arcy, N. Balepur, D. Bareket, B. Dalvi, S. Feldman, D. Haddad, J. D. Hwang, P. Jansen, V. Kishore, B. P. Majumder, A. Naik, S. Rahamimov, K. Richardson, A. Singh, H. Surana, A. Tiktinsky, R. Vasu, G. Wiener, C. Anastasiades, S. Candra, J. Dunkelberger, D. Emery, R. Evans, M. Hamada, R. Huff, R. Kinney, M. Latzke, J. Lochner, R. Lozano-Aguilera, C. Nguyen, S. Rao, A. Tanaka, B. Vlahos, P. Clark, D. Downey, Y. Goldberg, A. Sabharwal, and D. S. Weld. AstaBench: Rigorous benchmarking of AI agents with a scientific research suite. InInternational Conference on Learning Representations, 2026. [17] A. M. Bran, S. Cox, O. Schilter, C. Baldassari, A. D. White, and P. Schwaller. ChemCrow: Augmenting large language models with chemistry tools.Nature Machine Intelligence, 6(5):525–535, 2024. [18] ByteDance. DeerFlow: A deep research framework orchestrating sub-agents, memory, and sandboxes.https: //github.com/bytedance/deer-flow, 2025. 52 [19] J. Chai, S. Tang, R. Ye, Y. Du, X. Zhu, M. Zhou, Y. Wang, W. E, Y. Zhang, L. Zhang, and S. Chen. SciMaster: Towards general-purpose scientific AI agents, part I. X-Master as foundation: Can we lead on humanity’s last exam?arXiv preprint arXiv:2507.05241, 2025. [20] J. S. Chan, N. Chowdhury, O. Jaffe, J. Aung, D. Sherburn, E. Mays, G. Starace, K. Liu, L. Maksin, T. Patwardhan, L. Weng, and A. Madry. MLE-Bench: Evaluating machine learning agents on machine learning engineering. In International Conference on Learning Representations, 2025. [21] C.-C. Chen and I. Gurevych. Commitment checklist: Auditing author commitments in peer review.arXiv preprint arXiv:2603.00003, 2026. [22] D. Chen. AI-generated figures in academic publishing: Policies, tools, and practical guidelines.arXiv preprint arXiv:2603.16159, 2026. [23] G. Chen, J. Chen, L. Chen, J. Zhao, F. Meng, W. X. Zhao, R. Song, C. Chen, J.-R. Wen, and K. Jia. Toward autonomous long-horizon engineering for ML research.arXiv preprint arXiv:2604.13018, 2026. [24] H. Chen, M. Xiong, Y. Lu, W. Han, A. Deng, Y. He, J. Wu, Y. Li, Y. Liu, and B. Hooi. MLR-Bench: Evaluating AI agents on open-ended machine learning research.arXiv preprint arXiv:2505.19955, 2025. [25] N. Chen, A. H. Lin, J. Wu, J. Hou, Z. Zhang, Q. Wang, X. Wang, and B. He. XtraGPT: Context-aware and controllable academic paper revision.arXiv preprint arXiv:2505.11336, 2025. [26] Q. Chen, M. Yang, L. Qin, J. Liu, Z. Yan, J. Guan, D. Peng, Y. Ji, H. Li, M. Hu, Y. Zhang, Y. Liang, Y. Zhou, J. Wang, Z. Chen, and W. Che. AI4Research: A survey of artificial intelligence for scientific research.arXiv preprint arXiv:2507.01903, 2025. [27] S. Chen, J. Lai, J. Gao, H. Shi, Z. Liu, T. Ye, J. Luo, X. Wei, and L. Zhu. PosterOmni: Generalized artistic poster creation via task distillation and unified reward feedback.arXiv preprint arXiv:2602.12127, 2026. [28] S. Chen, J. Lai, J. Gao, T. Ye, H. Chen, H. Shi, S. Shao, Y. Lin, S. Fei, Z. Xing, Y. Jin, J. Luo, X. Wei, and L. Zhu. PosterCraft: Rethinking high-quality aesthetic poster generation in a unified framework. InProceedings of the International Conference on Learning Representations (ICLR), 2026. URLhttps://arxiv.org/abs/2506.10741. [29] S. Chen, S. Zhong, D. P. Brumby, and A. L. Cox. What happens when reviewers receive AI feedback in their reviews? InProceedings of the 2026 CHI Conference on Human Factors in Computing Systems, 2026. doi: 10.1145/3772318.3791431. URLhttps://doi.org/10.1145/3772318.3791431. [30] Y. Chen, T. Lv, S. Zhang, Y. Yin, Y. Wan, P. S. Yu, and D. Chen. Paper2Web: Let’s make your paper alive! arXiv preprint arXiv:2510.15842, 2025. [31] Z. Chen, J. Chen, S. O. Arik, M. Sra, T. Pfister, and J. Yoon. CoDA: Agentic systems for collaborative data visualization.arXiv preprint arXiv:2510.03194, 2025. [32] Z. Chen, S. Chen, Y. Ning, Q. Zhang, B. Wang, B. Yu, Y. Li, Z. Liao, C. Wei, Z. Lu, V. Dey, M. Xue, F. N. Baker, B. Burns, D. Adu-Ampratwum, X. Huang, X. Ning, S. Gao, Y. Su, and H. Sun. ScienceAgentBench: Toward rigorous assessment of language agents for data-driven scientific discovery. InInternational Conference on Learning Representations, 2025. [33] J. Choi, S. Park, S. Song, and H. Shim. PosterForest: Hierarchical multi-agent collaboration for scientific poster generation.arXiv preprint arXiv:2508.21720, 2025. [34] P. H. Couto, Q. P. Ho, N. Kumari, B. K. Rachmat, T. G. H. Khuong, I. Ullah, and L. Sun-Hosoya. RelevAIReviewer: A benchmark on AI reviewers for survey paper relevance.arXiv preprint arXiv:2406.10294, 2024. URLhttps://arxiv.org/abs/2406.10294. [35] M. D’Arcy, T. Hope, L. Birnbaum, and D. Downey. MARG: Multi-agent review generation for scientific papers. arXiv preprint arXiv:2401.04259, 2024. [36] F. De Ponte. OpenDraft: 19-agent research draft generation.https://github.com/federicodeponte/opendraft, 2025. [37] X. Deng, J. Da, E. Pan, Y. Y. He, C. Ide, K. Garg, N. Lauffer, A. Park, N. Pasari, C. Rane, K. Sampath, M. Krishnan, S. Kundurthy, S. Hendryx, Z. Wang, V. Bharadwaj, J. Holm, R. Aluri, C. B. C. Zhang, N. Jacobson, B. Liu, and B. Kenstler. SWE-Bench Pro: Can AI agents solve long-horizon software engineering tasks?arXiv preprint arXiv:2509.16941, 2025. 53"
   }
 ]
