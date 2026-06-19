@@ -1,0 +1,36 @@
+name: Update tracker (arXiv ingest)
+
+# Runs daily and on manual trigger. It does NOT publish anything directly —
+# it opens a Pull Request with the new candidate papers so a human approves them.
+on:
+  schedule:
+    - cron: "0 6 * * *"   # every day at 06:00 UTC
+  workflow_dispatch: {}    # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch new arXiv candidates
+        run: python scripts/ingest.py
+
+      - name: Open a Pull Request with the new entries
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: add new arXiv candidates"
+          branch: tracker/auto-ingest
+          title: "Auto-ingest: new AI auto-research papers"
+          body: |
+            Automated arXiv pull. New rows have `category: "(unclassified)"`.
+            Please review, fix the stage/category, and merge.
+          add-paths: data.json
