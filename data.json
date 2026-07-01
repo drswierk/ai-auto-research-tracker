@@ -2448,5 +2448,205 @@
     "link": "https://www.google.com/search?q=PiFlow%20arXiv%20auto-research",
     "github": false,
     "eval": "Principle-aware scientific discovery 50 B Survey Coverage Comparison & Taxonomy Analysis Table 12 compares our coverage with five closely related concurrent efforts. The goal is not to rank surveys, but to clarify how our lifecycle framework differs in scope and organization. Our eight-stage framework subsumes several prior taxonomies while making two distinctions explicit: AI auto-research should be analyzed across the complete lifecycle, and stages should be grouped by epistemological function rather than only by task name or autonomy level. • AI4Research[ 26] defines five task categories: Comprehension, Survey, Discovery, Writing, and Review. These overlap with our S1– S3, S5, and S6. Our framework newly elevates S4 (Tables & Figures), S7 (Rebuttal & Revision), and S8 (Dissemination) as independent lifecycle stages. • From Automation to Autonomy[ 264] organizes systems by autonomy level, from tool-like assistance to scientist-level automation. This axis is complementary: each of our stages can be instantiated at different autonomy levels, while our framework specifieswherein the research lifecycle the system operates. • LLM4SR[ 126] proposes a four-part view centered on hypothesis, experiment, writing, and review. This structure is close to ours, but does not separately model rebuttal and revision as a feedback stage. Our Validation phase separates S6 from S7, making the review–response loop explicit. • Automated Scholarly Paper Review[ 272] provide in-depth coverage of review generation, quality assessment, and reviewer–paper matching. They are complementary to our work: they focus onS6, while our framework places peer review within the broader lifecycle. • AI Scientist Survey[ 205] focus on autonomous or semi-autonomous scientific discovery, overlapping mainly with S1– S3 and S5. Our framework extends this view by also covering scientific visualization, peer validation, rebuttal, and dissemination. Table 12Comparison of survey coverage across our four-phase research lifecycle framework. ✓ = in-depth coverage,◦ = partial coverage, — = not covered,⋆new= newly introduced stage. Stage OursLLM4SR2501 PR Survey2501 Auto→Auton2505 AI4Research2507 AI Scientists2510 Phase 1: Creation S1: Idea Generation novelty, feasibility, multi-agent ✓ ✓—✓ ✓ ✓ S2: Literature Review retrieval, survey gen, deep research ✓ — —✓ ✓ ✓ S3: Coding & Experiments paper-to-code, execution, analysis ✓ ✓—✓ ✓ ✓ S4: Figures & Tables diagrams, plots, formulas ✓ — —◦ ◦— Phase 2: Writing S5: Paper Writing semi-auto, full-auto, detection ✓ ✓—◦✓ ✓ Phase 3: Validation S6: Peer Review auto-review, matching, quality ✓ ✓ ✓◦✓— S7: Rebuttal & Revision comment analysis, rebuttal gen ⋆new — — — — — Phase 4: Dissemination S8: Dissemination poster, slides, video, social ⋆new — — — — — Stages covered 8/8 4 1 5 5 4 These comparisons show that prior taxonomies often list research tasks sequentially, while leaving functional distinctions and feedback loops implicit. Our four-phase framework makes these dependencies explicit. For example, S6 (Peer Review) and S7 (Rebuttal & Revision) do not simply follow paper writing as isolated downstream steps; they can redirect the workflow back to S3 for additional experiments, S4 for revised figures or tables, and S5 for manuscript restructuring. Similarly, dissemination artifacts in S8 may expose ambiguities in the original framing, requiring revisions to claims, explanations, or visual evidence. These cross-stage dependencies are central to real research practice and are especially important for AI-assisted workflows, where errors can propagate from generated ideas to experiments, from experiments to claims, and from claims to public-facing summaries. By organizing the field intoCreation,Writing,Validation, andDissemination, our framework highlights not only which stages are covered by existing systems, but also where evidence, claims, critique, and communication must remain aligned. 51 References [1] J. Abramson, J. Adler, J. Dunger, R. Evans, T. Green, A. Pritzel, O. Ronneberger, L. Willmore, A. J. Ballard, J. Bambrick, S. W. Bodenstein, D. A. Evans, C.-C. Hung, M. O’Neill, D. Reiman, K. Tunyasuvunakool, Z. Wu, A. Žemgulyt˙ e, E. Arvaniti, C. Beattie, O. Bertolusso, A. Sherwood, J. M. Jumper, and D. Hassabis. Accurate structure prediction of biomolecular interactions with AlphaFold 3.Nature, 630:493–500, 2024. [2] S. Agarwal, G. Sahu, A. Puri, I. H. Laradji, K. D. Dvijotham, J. Stanley, L. Charlin, and C. Pal. LitLLM: A toolkit for literature review with large language models.arXiv preprint arXiv:2402.01788, 2024. [3] T. Aggarwal and A. Bhand. PASS: Presentation automation for slide generation and speech.arXiv preprint arXiv:2501.06497, 2025. [4] A. Ajith, M. Xia, A. Chevalier, T. Goyal, D. Chen, and T. Gao. LitSearch: A retrieval benchmark for scientific literature search. InConference on Empirical Methods in Natural Language Processing, 2024. [5] I. Al Azher, M. J. Mokarrama, Z. Guo, S. R. Choudhury, and H. Alhoori. FutureGen: A RAG-based approach to generate the future work of scientific article.arXiv preprint arXiv:2503.16561, 2025. [6] I. Al Azher, Z. Guo, and H. Alhoori. Multi-agent LLMs for generating research limitations.arXiv preprint arXiv:2601.11578, 2026. [7] Alibaba NLP. Tongyi DeepResearch: An agentic LLM for long-horizon deep information seeking. https: //github.com/Alibaba-NLP/DeepResearch, 2025. [8] Analemma.ai. FARS: Fully automated research system.https://analemma.ai/blog/introducing-fars, 2026. [9] A. Asai, J. He, R. Shao, W. Shi, A. Singh, J. C. Chang, K. Lo, L. Soldaini, S. Feldman, M. D’Arcy, D. Wadden, M. Latzke, J. Sparks, J. D. Hwang, V. Kishore, M. Tian, P. Ji, S. Liu, H. Tong, B. Wu, Y. Xiong, L. Zettlemoyer, G. Neubig, D. S. Weld, D. Downey, W. tau Yih, P. W. Koh, and H. Hajishirzi. Synthesizing scientific literature with retrieval-augmented language models.Nature, 650:857–863, 2026. doi: 10.1038/s41586-025-10072-4. URL https://doi.org/10.1038/s41586-025-10072-4. [10] J. Baek, S. K. Jauhar, S. Cucerzan, and S. J. Hwang. ResearchAgent: Iterative research idea generation over scientific literature with large language models. InProceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers), pages 6709–6738, 2025. doi: 10.18653/v1/2025.naacl-long.342. URLhttps://aclanthology.org/ 2025.naacl-long.342/. [11] C. Beger and C.-L. Henneking. Citegeist: Automated generation of related work analysis on the arXiv corpus. arXiv preprint arXiv:2503.23229, 2025. [12] J. Belouadi, A. Lauscher, and S. Eger. AutomaTikZ: Text-guided synthesis of scientific vector graphics with TikZ. InInternational Conference on Learning Representations, 2024. [13] J. Belouadi, S. P. Ponzetto, and S. Eger. DeTikZify: Synthesizing graphics programs for scientific figures and sketches with TikZ. InAdvances in Neural Information Processing Systems, volume 37, pages 85074–85108, 2024. [14] Blog. 228 hours of non-stop work to produce 100 papers, burning through 11.4 billion tokens: Fars has gone crazy.https://eu.36kr.com/en/p/3696795271966336, 2026. [15] D. A. Boiko, R. MacKnight, B. Kline, and G. Gomes. Autonomous chemical research with large language models. Nature, 624(7992):570–578, 2023. [16] J. Bragg, M. D’Arcy, N. Balepur, D. Bareket, B. Dalvi, S. Feldman, D. Haddad, J. D. Hwang, P. Jansen, V. Kishore, B. P. Majumder, A. Naik, S. Rahamimov, K. Richardson, A. Singh, H. Surana, A. Tiktinsky, R. Vasu, G. Wiener, C. Anastasiades, S. Candra, J. Dunkelberger, D. Emery, R. Evans, M. Hamada, R. Huff, R. Kinney, M. Latzke, J. Lochner, R. Lozano-Aguilera, C. Nguyen, S. Rao, A. Tanaka, B. Vlahos, P. Clark, D. Downey, Y. Goldberg, A. Sabharwal, and D. S. Weld. AstaBench: Rigorous benchmarking of AI agents with a scientific research suite. InInternational Conference on Learning Representations, 2026. [17] A. M. Bran, S. Cox, O. Schilter, C. Baldassari, A. D. White, and P. Schwaller. ChemCrow: Augmenting large language models with chemistry tools.Nature Machine Intelligence, 6(5):525–535, 2024. [18] ByteDance. DeerFlow: A deep research framework orchestrating sub-agents, memory, and sandboxes.https: //github.com/bytedance/deer-flow, 2025. 52 [19] J. Chai, S. Tang, R. Ye, Y. Du, X. Zhu, M. Zhou, Y. Wang, W. E, Y. Zhang, L. Zhang, and S. Chen. SciMaster: Towards general-purpose scientific AI agents, part I. X-Master as foundation: Can we lead on humanity’s last exam?arXiv preprint arXiv:2507.05241, 2025. [20] J. S. Chan, N. Chowdhury, O. Jaffe, J. Aung, D. Sherburn, E. Mays, G. Starace, K. Liu, L. Maksin, T. Patwardhan, L. Weng, and A. Madry. MLE-Bench: Evaluating machine learning agents on machine learning engineering. In International Conference on Learning Representations, 2025. [21] C.-C. Chen and I. Gurevych. Commitment checklist: Auditing author commitments in peer review.arXiv preprint arXiv:2603.00003, 2026. [22] D. Chen. AI-generated figures in academic publishing: Policies, tools, and practical guidelines.arXiv preprint arXiv:2603.16159, 2026. [23] G. Chen, J. Chen, L. Chen, J. Zhao, F. Meng, W. X. Zhao, R. Song, C. Chen, J.-R. Wen, and K. Jia. Toward autonomous long-horizon engineering for ML research.arXiv preprint arXiv:2604.13018, 2026. [24] H. Chen, M. Xiong, Y. Lu, W. Han, A. Deng, Y. He, J. Wu, Y. Li, Y. Liu, and B. Hooi. MLR-Bench: Evaluating AI agents on open-ended machine learning research.arXiv preprint arXiv:2505.19955, 2025. [25] N. Chen, A. H. Lin, J. Wu, J. Hou, Z. Zhang, Q. Wang, X. Wang, and B. He. XtraGPT: Context-aware and controllable academic paper revision.arXiv preprint arXiv:2505.11336, 2025. [26] Q. Chen, M. Yang, L. Qin, J. Liu, Z. Yan, J. Guan, D. Peng, Y. Ji, H. Li, M. Hu, Y. Zhang, Y. Liang, Y. Zhou, J. Wang, Z. Chen, and W. Che. AI4Research: A survey of artificial intelligence for scientific research.arXiv preprint arXiv:2507.01903, 2025. [27] S. Chen, J. Lai, J. Gao, H. Shi, Z. Liu, T. Ye, J. Luo, X. Wei, and L. Zhu. PosterOmni: Generalized artistic poster creation via task distillation and unified reward feedback.arXiv preprint arXiv:2602.12127, 2026. [28] S. Chen, J. Lai, J. Gao, T. Ye, H. Chen, H. Shi, S. Shao, Y. Lin, S. Fei, Z. Xing, Y. Jin, J. Luo, X. Wei, and L. Zhu. PosterCraft: Rethinking high-quality aesthetic poster generation in a unified framework. InProceedings of the International Conference on Learning Representations (ICLR), 2026. URLhttps://arxiv.org/abs/2506.10741. [29] S. Chen, S. Zhong, D. P. Brumby, and A. L. Cox. What happens when reviewers receive AI feedback in their reviews? InProceedings of the 2026 CHI Conference on Human Factors in Computing Systems, 2026. doi: 10.1145/3772318.3791431. URLhttps://doi.org/10.1145/3772318.3791431. [30] Y. Chen, T. Lv, S. Zhang, Y. Yin, Y. Wan, P. S. Yu, and D. Chen. Paper2Web: Let’s make your paper alive! arXiv preprint arXiv:2510.15842, 2025. [31] Z. Chen, J. Chen, S. O. Arik, M. Sra, T. Pfister, and J. Yoon. CoDA: Agentic systems for collaborative data visualization.arXiv preprint arXiv:2510.03194, 2025. [32] Z. Chen, S. Chen, Y. Ning, Q. Zhang, B. Wang, B. Yu, Y. Li, Z. Liao, C. Wei, Z. Lu, V. Dey, M. Xue, F. N. Baker, B. Burns, D. Adu-Ampratwum, X. Huang, X. Ning, S. Gao, Y. Su, and H. Sun. ScienceAgentBench: Toward rigorous assessment of language agents for data-driven scientific discovery. InInternational Conference on Learning Representations, 2025. [33] J. Choi, S. Park, S. Song, and H. Shim. PosterForest: Hierarchical multi-agent collaboration for scientific poster generation.arXiv preprint arXiv:2508.21720, 2025. [34] P. H. Couto, Q. P. Ho, N. Kumari, B. K. Rachmat, T. G. H. Khuong, I. Ullah, and L. Sun-Hosoya. RelevAIReviewer: A benchmark on AI reviewers for survey paper relevance.arXiv preprint arXiv:2406.10294, 2024. URLhttps://arxiv.org/abs/2406.10294. [35] M. D’Arcy, T. Hope, L. Birnbaum, and D. Downey. MARG: Multi-agent review generation for scientific papers. arXiv preprint arXiv:2401.04259, 2024. [36] F. De Ponte. OpenDraft: 19-agent research draft generation.https://github.com/federicodeponte/opendraft, 2025. [37] X. Deng, J. Da, E. Pan, Y. Y. He, C. Ide, K. Garg, N. Lauffer, A. Park, N. Pasari, C. Rane, K. Sampath, M. Krishnan, S. Kundurthy, S. Hendryx, Z. Wang, V. Bharadwaj, J. Holm, R. Aluri, C. B. C. Zhang, N. Jacobson, B. Liu, and B. Kenstler. SWE-Bench Pro: Can AI agents solve long-horizon software engineering tasks?arXiv preprint arXiv:2509.16941, 2025. 53"
+  },
+  {
+    "method": "Conditional Hypothesis Generation for LLM-Based Text Analysis with Researcher-Specified Covariates",
+    "stage": "S1",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.03029v1",
+    "github": false,
+    "eval": "A core goal of computational social science is to discover interpretable differences in how language varies across outcomes of interest, suc…"
+  },
+  {
+    "method": "DEEPMED Search: An Open-Source Agentic Platform for Medical Deep Research with Introspective Verification",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.29746v1",
+    "github": false,
+    "eval": "Navigating the deluge of heterogeneous medical data, from academic literature (PubMed) to clinical guidelines (Web) and private knowledge ba…"
+  },
+  {
+    "method": "ScaffoldAgent: Utility-Guided Dynamic Outline Optimization for Open-Ended Deep Research",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.20122v1",
+    "github": false,
+    "eval": "Open-ended deep research (OEDR) requires systems to acquire knowledge through multi-round retrieval and generate coherent long-form reports.…"
+  },
+  {
+    "method": "MetaResearcher: Scaling Deep Research via Self-Reflective Reinforcement Learning in Adversarial Virtual Environments",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.19893v1",
+    "github": false,
+    "eval": "Deep research agents have demonstrated remarkable capabilities in autonomous information gathering and synthesis, yet their training remains…"
+  },
+  {
+    "method": "DRFLOW: A Deep Research Benchmark for Personalized Workflow Prediction",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.18191v2",
+    "github": false,
+    "eval": "Deep research (DR) systems are increasingly used for complex information-seeking tasks, but existing works mainly focus on generating report…"
+  },
+  {
+    "method": "DEEPRUBRIC: Evidence-Tree Rubric Supervision for Efficient Reinforcement Learning of Deep Research Agents",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.17029v1",
+    "github": false,
+    "eval": "Deep research agents synthesize long-form reports by searching and reasoning over retrieved evidence. Reinforcement learning with rubric-bas…"
+  },
+  {
+    "method": "Beyond Monolingual Deep Research: Evaluating Agents and Retrievers with Cross-Lingual BrowseComp-Plus",
+    "stage": "S2",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.15345v2",
+    "github": false,
+    "eval": "Deep research agents are increasingly evaluated on their ability to search for evidence, reason over retrieved sources, and produce grounded…"
+  },
+  {
+    "method": "RevengeBench: Reverse Engineering Code-Space Policies from Behavioral Experiments",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.26094v1",
+    "github": false,
+    "eval": "For most of scientific history, researchers studying behavior could only infer hidden mechanisms from outward actions: an inverse problem th…"
+  },
+  {
+    "method": "ASAP: Agent-System Co-Design for Wall-Clock-Centered Auto HPO Research for ML Experiments",
+    "stage": "S3",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.25207v1",
+    "github": false,
+    "eval": "Hyperparameter Optimization (HPO) is essential for maximizing machine learning model performance, and its core challenge is sample efficienc…"
+  },
+  {
+    "method": "LLM-Based Scientific Peer Review: Methods, Benchmarks, and Reliability Challenges",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.25057v1",
+    "github": false,
+    "eval": "The rapid growth of scientific submissions has pushed traditional peer review toward its scalability limits, motivating the exploration of l…"
+  },
+  {
+    "method": "Aspect-Based Sentiment Evolution and its Correlation with Review Rounds in Multi-Round Peer Reviews: A Deep Learning Approach",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.24188v1",
+    "github": false,
+    "eval": "Mining sentiment information from the textual content of peer review comments offers valuable insights into the scientific evaluation proces…"
+  },
+  {
+    "method": "Judgment-Grounded Expansion for Peer Review Generation",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.23233v1",
+    "github": false,
+    "eval": "Automatic review generation is a promising direction for accelerating scientific progress. While most work adopts an end-to-end setup, its f…"
+  },
+  {
+    "method": "Which Review Aspect Has a Greater Impact on the Duration of Open Peer Review in Multiple Rounds? -- Evidence from Nature Communications",
+    "stage": "S6",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.21904v1",
+    "github": false,
+    "eval": "Purpose: Peer review is essential to scientific publishing, but increasing submission volumes have placed growing pressure on reviewers and …"
+  },
+  {
+    "method": "Rebuttals Move Peer-Review Scores, but Initial-Review Structure Bounds the Movement",
+    "stage": "S7",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.22166v1",
+    "github": false,
+    "eval": "Author rebuttals are the main post-submission window in peer review, but their effect on reviewer scores remains hard to measure because sco…"
+  },
+  {
+    "method": "One Reflection Is Not Enough: Self-Correcting Autonomous Research via Multi-Hypothesis Failure Attribution",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.31478v1",
+    "github": false,
+    "eval": "Autonomous research agents can now draft hypotheses, write code, run experiments, and produce papers, but they remain brittle when experimen…"
+  },
+  {
+    "method": "Clarus: Coordinating Autonomous Research Agents toward Web-Scale Scientific Collaboration",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.30246v1",
+    "github": false,
+    "eval": "Existing autonomous research agents can support parts of the research process, but most systems still treat research as either an isolated a…"
+  },
+  {
+    "method": "AICID: Unique Identifiers for AI Scientists",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.28756v2",
+    "github": false,
+    "eval": "AI scientists are now a reality, with the ability to generate complete research papers, maintain scholarly profiles, receive citations, and …"
+  },
+  {
+    "method": "Heuresis: Search Strategies for Autonomous AI Research Agents Across Quality, Diversity and Novelty",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.25198v1",
+    "github": false,
+    "eval": "Autonomous AI Research promises to accelerate the scientific progress of machine learning. To realise this goal, current Large Language Mode…"
+  },
+  {
+    "method": "Position: Correct Answer, Wrong Mechanism -- When AI Scientists Defend General Claims Their Own Data Contradicts",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.23175v1",
+    "github": false,
+    "eval": "AI scientist systems are described as tools, coauthors, or founders, but we evaluate them as if only the final answer matters. This position…"
+  },
+  {
+    "method": "AI Scientists as Engines of Discovery: A Case for Development within Reformed Institutions",
+    "stage": "E2E",
+    "category": "(unclassified)",
+    "venue": "arXiv",
+    "year": 2026,
+    "link": "http://arxiv.org/abs/2606.22859v1",
+    "github": false,
+    "eval": "Agentic artificial intelligence (AI) systems are beginning to assist, accelerate, and partially automate scientific discovery, performing ta…"
   }
 ]
